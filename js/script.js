@@ -13,6 +13,23 @@ const observer = new IntersectionObserver((entries)=>{
     });
 });
 
+const switchElement = document.getElementById('modeSwitch');
+const sunIcon = document.querySelector('.fa-sun');
+const moonIcon = document.querySelector('.fa-moon');
+
+switchElement.addEventListener('change', function() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  if (this.checked) {
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'inline-block';
+  } else {
+    sunIcon.style.display = 'inline-block';
+    moonIcon.style.display = 'none';
+  }
+});
+
+
 const hidenElements = document.querySelectorAll(".hidden");
 
 hidenElements.forEach((element) => observer.observe(element));

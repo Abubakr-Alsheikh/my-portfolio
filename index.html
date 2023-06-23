@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/logo.png" />
     <title>Abubakr Alsheikh</title>
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="style/cdnjs.cloudflare.com_ajax_libs_font-awesome_5.15.4_css_all.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,12 +25,20 @@
   </head>
   <body>
     <div class="custom-shape-divider-top-1686907126">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"
+        ></path>
       </svg>
     </div>
     <header>
-      <div class="container">
+      <div class="container text-shadow">
         <div class="logo">
           <img src="images/logo.png" alt="" />
           <h2><span>Abubakr</span><br /><span>Alsheikh</span></h2>
@@ -35,7 +51,7 @@
             <span></span>
           </div>
           <ul>
-            <li style="display: none;"><a href="#home">home</a></li>
+            <li style="display: none"><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#services">services</a></li>
             <li><a href="#projects">projects</a></li>
@@ -44,16 +60,28 @@
           </ul>
         </nav>
         <div class="links">
-          <a href="https://www.linkedin.com/in/abubakr-alsheikh-7a8209255/" target="_blank"><img src="images/icons/linkedin-icon.png" alt="" /></a>
-          <a href="tg://resolve?domain=AbubakrAlsheikh" target="_blank"><img src="images/icons/telegram-icon.png" alt="" /></a>
+          <div class="language">
+            <i class="fas fa-language fa-2x"></i>
+            <ul>
+              <li>English</li>
+              <li>عربي</li>
+            </ul>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="modeSwitch" />
+            <span class="slider round">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+            </span>
+          </label>
         </div>
       </div>
     </header>
 
     <!-- start home -->
     <section class="home" id="home">
-      <div class="container hidden">
-        <div class="info ">
+      <div class="container hidden text-shadow">
+        <div class="info">
           <p class="intro">Welcome to my portfolio.</p>
           <h1>I'm <span>Abubakr</span> <span>Alsheikh</span></h1>
           <h1>A web <span>developer</span> and <span>designer</span></h1>
@@ -70,45 +98,62 @@
           <img src="images/image.png" alt="" />
         </div>
       </div>
-      
     </section>
     <!-- end home -->
-    
+
     <!-- start about -->
     <section class="about" id="about">
       <div class="custom-shape-divider-bottom-1686907369">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
         </svg>
       </div>
       <div class="f-sec-column bg-gray">
         <h2 class="main-text hidden">About</h2>
-        <div class="container hidden">
+        <div class="container hidden text-shadow">
           <div class="image">
             <img src="images/about.png" alt="" />
           </div>
           <div class="text">
             <p>
               Hello there. Thanks for visiting my portfolio website. I’m a web
-              designer and developer who loves to discover new things and give my
-              best. I am from Syria, where I graduated from the Institute of
+              designer and developer who loves to discover new things and give
+              my best. I am from Syria, where I graduated from the Institute of
               Computer Technology in Aleppo. I am also currently studying
-              Informatics Technology Engineering at the Syrian Virtual University.
+              Informatics Technology Engineering at the Syrian Virtual
+              University.
             </p>
             <p>
-              My passion for web design and development started when I got a grant
-              from the Syrian Youth Gathering to access Coursera, an online
-              learning platform. There, I learned a lot of skills and techniques
-              that helped me create beautiful and functional websites. I also
-              gained a lot of confidence and motivation to pursue my career goals.
+              My passion for web design and development started when I got a
+              grant from the Syrian Youth Gathering to access Coursera, an
+              online learning platform. There, I learned a lot of skills and
+              techniques that helped me create beautiful and functional
+              websites. I also gained a lot of confidence and motivation to
+              pursue my career goals.
             </p>
             <p>
-              I enjoy creating websites that are responsive. I also like to learn
-              new things and solve problems using design thinking and coding
-              skills. My dream is to work on projects that make a positive impact
-              on people and society.
+              I enjoy creating websites that are responsive. I also like to
+              learn new things and solve problems using design thinking and
+              coding skills. My dream is to work on projects that make a
+              positive impact on people and society.
             </p>
             <p>
               If you want to know more about me or my work, feel free to contact
@@ -119,20 +164,36 @@
         </div>
       </div>
       <div class="custom-shape-divider-top-1686907522">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
         </svg>
       </div>
     </section>
     <!-- end about -->
 
     <!-- start services -->
-    <section class="services " id="services">
+    <section class="services" id="services">
       <div class="f-sec-column">
         <h2 class="main-text hidden">services</h2>
-        <div class="container">
+        <div class="container text-shadow">
           <div class="servs">
             <div class="serv hidden">
               <img src="images/icons/frontend-icon.png" alt="" class="icon" />
@@ -146,8 +207,8 @@
                   </div>
                 </div>
                 <p>
-                  Implementing interactive features and animations to enhance user
-                  interactions.
+                  Implementing interactive features and animations to enhance
+                  user interactions.
                 </p>
               </div>
             </div>
@@ -185,12 +246,22 @@
               </div>
             </div>
           </div>
-          <div class="image hidden"><img src="images/services.jpg" alt="" /></div>
+          <div class="image hidden">
+            <img src="images/services.jpg" alt="" />
+          </div>
         </div>
       </div>
       <div class="custom-shape-divider-bottom-1686916521">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+            class="shape-fill"
+          ></path>
         </svg>
       </div>
     </section>
@@ -202,8 +273,12 @@
         <h2 class="main-text hidden">Projects</h2>
         <div class="container">
           <div class="box">
-            <a href="images/Projects/lona.png" data-lightbox="project" data-title="<a href='#'>See the site</a>">
-              <img src="images/Projects/lona.png" alt="" srcset=""/>
+            <a
+              href="images/Projects/lona.png"
+              data-lightbox="project"
+              data-title="<a href='#'>See the site</a>"
+            >
+              <img src="images/Projects/lona.png" alt="" srcset="" />
             </a>
             <p>lona Template</p>
           </div>
@@ -234,8 +309,16 @@
         </div>
       </div>
       <div class="custom-shape-divider-top-1686917103">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" class="shape-fill"></path>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+            class="shape-fill"
+          ></path>
         </svg>
       </div>
     </section>
@@ -246,8 +329,8 @@
       <h2 class="main-text hidden">certificates</h2>
       <div class="container">
         <div class="box">
-          <a href="images/Certificates/html.jpeg" data-lightbox="certificates" >
-            <img src="images/Certificates/html.jpeg" alt="" srcset=""/>
+          <a href="images/Certificates/html.jpeg" data-lightbox="certificates">
+            <img src="images/Certificates/html.jpeg" alt="" srcset="" />
           </a>
           <p>html</p>
         </div>
@@ -258,7 +341,10 @@
           <p>css</p>
         </div>
         <div class="box">
-          <a href="images/Certificates/advanced-css.jpeg" data-lightbox="certificates">
+          <a
+            href="images/Certificates/advanced-css.jpeg"
+            data-lightbox="certificates"
+          >
             <img src="images/Certificates/advanced-css.jpeg" alt="" srcset="" />
           </a>
           <p>advanced css</p>
@@ -288,45 +374,85 @@
     <!-- start contact -->
     <section class="contact" id="contact">
       <div class="custom-shape-divider-top-1686907126">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
         </svg>
       </div>
       <div class="f-sec-column bg-gray">
         <h2 class="main-text hidden">contact</h2>
-        <div class="container">
+        <div class="container text-shadow">
           <div class="info">
-            <div class="box">
+            <div class="box hidden">
               <div class="icon">
-                <img src="images/icons/phone-icon.png" alt="" />
+                <!-- <img src="images/icons/phone-icon.png" alt="" /> -->
+                <i class="fa fa-mobile-alt fa-3x"></i>
               </div>
               <div class="other">
                 <p>+963 980 235 562</p>
                 <div class="links">
-                  <a href="https://wa.me/963980235562" target="_blank"><img src="images/icons/whatsup-icon.png" alt="" /></a>
-                  <a href="tg://resolve?domain=AbubakrAlsheikh" target="_blank"><img src="images/icons/telegram-icon.png" alt="" /></a>        
+                  <a href="https://wa.me/963980235562" target="_blank">
+                    <i class="fab fa-whatsapp fa-2x fa-fw"></i>
+                  </a>
+                  <a href="tg://resolve?domain=AbubakrAlsheikh" target="_blank">
+                    <i class="fab fa-telegram fa-2x fa-fw"></i>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="box">
+            <div class="box hidden">
               <div class="icon">
-                <img src="images/icons/email-icon.png" alt="" />
+                <!-- <img src="images/icons/email-icon.png" alt="" /> -->
+                <i class="fa fa-envelope-open-text fa-3x"></i>
               </div>
               <div class="other">
-                <a href="mailto:AbubakrAlsheikh@outlook.com"><p>AbubakrAlsheikh<br/>@outlook.com</p></a>
+                <a href="mailto:AbubakrAlsheikh@outlook.com">
+                  <p>AbubakrAlsheikh<br />@outlook.com</p>
+                </a>
                 <div class="links">
-                  <a href="https://www.linkedin.com/in/abubakr-alsheikh-7a8209255/" target="_blank"><img src="images/icons/linkedin-icon.png" alt="" /></a>
-                  <a href="https://www.facebook.com/abubakr.al.54/" target="_blank"><img src="images/icons/facebook-icon.png" alt="" /></a>        
+                  <a
+                    href="https://www.facebook.com/abubakr.al.54/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-facebook-square fa-2x fa-fw"></i>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/abubakr-alsheikh-7a8209255/"
+                    target="_blank"
+                  >
+                    <i class="fab fa-linkedin fa-2x fa-fw"></i>
+                  </a>
+                  <a href="https://github.com/Abubakr-Alsheikh" target="_blank">
+                    <i class="fab fa-github-square fa-2x fa-fw"></i>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
-          <form action="" method="post">
-            <input type="text" placeholder="Full name...">
-            <input type="text" placeholder="Email...">
-            <input type="text" placeholder="Phone...">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Tell me what you want..."></textarea>
-            <input type="submit" value="Send Message">
+          <form action="" method="post" class="hidden">
+            <i class="fa fa-user fa-2x fa-fw"></i>
+            <input type="text" placeholder="Full name..." />
+            <i class="fa fa-envelope fa-2x fa-fw"></i>
+            <input type="text" placeholder="Email..." />
+            <i class="fa fa-project-diagram fa-2x fa-fw"></i>
+            <input type="text" placeholder="Project..." />
+            <i class="fa fa-question fa-2x fa-fw"></i>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tell me what you want..."
+            ></textarea>
+            <i class="fab fa-telegram-plane fa-2x fa-fw"></i>
+            <input type="submit" value="Send Message" />
           </form>
         </div>
       </div>
@@ -334,7 +460,9 @@
     <!-- end contact -->
 
     <footer>
-      <div class="container"></div>
+      <div class="container">
+        <p>&copy;2023 - Abubakr Alsheikh</p>
+      </div>
     </footer>
 
     <script src="js/lightbox-plus-jquery.min.js"></script>
