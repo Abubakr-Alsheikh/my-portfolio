@@ -2,10 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Abubakr Alsheikh is a web developer and designer from Syria with a passion for creating beautiful and functional websites. He has a degree in Computer Technology and is studying Informatics Technology Engineering."
+    />
+    <meta
+      name="keywords"
+      content="web developer, web designer, Syria, computer technology, informatics technology engineering"
+    />
+    <meta name="author" content="Abubakr Alsheikh" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Abubakr Alsheikh - Web Developer and Designer</title>
     <link rel="icon" href="images/logo.png" />
-    <title>Abubakr Alsheikh</title>
     <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -63,17 +73,21 @@
           <div class="language">
             <i class="fas fa-language fa-2x"></i>
             <ul>
-              <li>English</li>
+              <li class="active">English</li>
               <li>عربي</li>
             </ul>
           </div>
-          <label class="switch">
+          <!-- <label class="switch">
             <input type="checkbox" id="modeSwitch" />
             <span class="slider round">
               <i class="fas fa-sun"></i>
               <i class="fas fa-moon"></i>
             </span>
-          </label>
+          </label> -->
+          <button id="theme-toggle" onclick="toggleDarkMode()">
+            <i class="fas fa-sun fa-2x"></i>
+            <i class="fas fa-moon fa-2x"></i>
+          </button>
         </div>
       </div>
     </header>
@@ -82,7 +96,7 @@
     <section class="home" id="home">
       <div class="container hidden text-shadow">
         <div class="info">
-          <p class="intro">Welcome to my portfolio.</p>
+          <p class="intro">Hello there!</p>
           <h1>I'm <span>Abubakr</span> <span>Alsheikh</span></h1>
           <h1>A web <span>developer</span> and <span>designer</span></h1>
           <p>
@@ -271,20 +285,20 @@
     <section class="projects" id="projects">
       <div class="f-sec-column bg-gray">
         <h2 class="main-text hidden">Projects</h2>
-        <div class="container">
-          <div class="box">
+        <div class="container hidden">
+          <!-- <div class="box">
             <a
               href="images/Projects/lona.png"
               data-lightbox="project"
               data-title="<a href='#'>See the site</a>"
             >
-              <img src="images/Projects/lona.png" alt="" srcset="" />
+              <img src="images/Projects/Frame 1 (1).png" alt="" srcset="" />
             </a>
             <p>lona Template</p>
           </div>
           <div class="box">
             <a href="images/Projects/kasperTemp.png" data-lightbox="project">
-              <img src="images/Projects/kasperTemp.png" alt="" srcset="" />
+              <img src="images/Projects/Frame 2 (1).png" alt="" srcset="" />
             </a>
             <p>kasper Template</p>
           </div>
@@ -305,7 +319,7 @@
               <img src="images/Projects/samaMedia.png" alt="" srcset="" />
             </a>
             <p>sama media</p>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="custom-shape-divider-top-1686917103">
@@ -327,20 +341,20 @@
     <!-- start certificates -->
     <section class="certificates f-sec-column" id="certificates">
       <h2 class="main-text hidden">certificates</h2>
-      <div class="container">
-        <div class="box">
+      <div class="container hidden">
+        <!-- <div class="box hidden">
           <a href="images/Certificates/html.jpeg" data-lightbox="certificates">
             <img src="images/Certificates/html.jpeg" alt="" srcset="" />
           </a>
           <p>html</p>
         </div>
-        <div class="box">
+        <div class="box hidden">
           <a href="images/Certificates/css.jpeg" data-lightbox="certificates">
             <img src="images/Certificates/css.jpeg" alt="" srcset="" />
           </a>
           <p>css</p>
         </div>
-        <div class="box">
+        <div class="box hidden">
           <a
             href="images/Certificates/advanced-css.jpeg"
             data-lightbox="certificates"
@@ -349,24 +363,24 @@
           </a>
           <p>advanced css</p>
         </div>
-        <div class="box">
+        <div class="box hidden">
           <a href="images/Certificates/js.jpeg" data-lightbox="certificates">
             <img src="images/Certificates/js.jpeg" alt="" srcset="" />
           </a>
           <p>JavaScript</p>
         </div>
-        <div class="box">
+        <div class="box hidden">
           <a href="images/Certificates/php.jpeg" data-lightbox="certificates">
             <img src="images/Certificates/php.jpeg" alt="" srcset="" />
           </a>
           <p>php</p>
         </div>
-        <div class="box">
+        <div class="box hidden">
           <a href="images/Certificates/WD4B.jpeg" data-lightbox="certificates">
             <img src="images/Certificates/WD4B.jpeg" alt="" srcset="" />
           </a>
           <p>Webdesign for everybody</p>
-        </div>
+        </div> -->
       </div>
     </section>
     <!-- end certificates -->
@@ -436,31 +450,38 @@
               </div>
             </div>
           </div>
-          <form action="" method="post" class="hidden">
+          <form
+            id="my-form"
+            action="https://formspree.io/f/xzblpaja"
+            method="post"
+            class="hidden"
+          >
             <i class="fa fa-user fa-2x fa-fw"></i>
-            <input type="text" placeholder="Full name..." />
+            <input type="text" placeholder="Full name..." name="name" />
             <i class="fa fa-envelope fa-2x fa-fw"></i>
-            <input type="text" placeholder="Email..." />
+            <input type="text" placeholder="Email..." name="email" />
             <i class="fa fa-project-diagram fa-2x fa-fw"></i>
-            <input type="text" placeholder="Project..." />
+            <input type="text" placeholder="Project..." name="project" />
             <i class="fa fa-question fa-2x fa-fw"></i>
             <textarea
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="10"
               placeholder="Tell me what you want..."
             ></textarea>
             <i class="fab fa-telegram-plane fa-2x fa-fw"></i>
-            <input type="submit" value="Send Message" />
+            <input type="submit" value="Send Message" id="my-form-button" />
           </form>
         </div>
       </div>
     </section>
     <!-- end contact -->
 
+    <p id="my-form-status"></p>
+
     <footer>
-      <div class="container">
+      <div class="container hidden">
         <p>&copy;2023 - Abubakr Alsheikh</p>
       </div>
     </footer>
@@ -468,5 +489,8 @@
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/script.js"></script>
+    <script type="module" src="js/handleData.js"></script>
+
+    <script></script>
   </body>
 </html>

@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "title":"Webdesign for everybody",
+        "image":"images/Certificates/WD4B.jpeg",
+        "url":"#",
+        "type":"specialization"
+    },
+    {
+        "id":2,
+        "title":"php",
+        "image":"images/Certificates/php.jpeg",
+        "url":"#",
+        "type":"certificate"
+    },
+    {
+        "id":3,
+        "title":"JavaScript",
+        "image":"images/Certificates/js.jpeg",
+        "url":"#",
+        "type":"certificate"
+    },
+    {
+        "id":4,
+        "title":"advanced css",
+        "image":"images/Certificates/advanced-css.jpeg",
+        "url":"#",
+        "type":"certificate"
+    },
+    {
+        "id":5,
+        "title":"css",
+        "image":"images/Certificates/css.jpeg",
+        "url":"#",
+        "type":"certificate"
+    },
+    {
+        "id":6,
+        "title":"html",
+        "image":"images/Certificates/html.jpeg",
+        "url":"#",
+        "type":"certificate"
+    }
+]

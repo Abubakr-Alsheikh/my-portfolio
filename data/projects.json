@@ -1,0 +1,42 @@
+[
+    {
+        "id":1,
+        "title":"lona Template",
+        "image-project":"images/Projects/lona.png",
+        "image-laptop":"images/Projects/Frame 1 (1).png",
+        "url":"#",
+        "type":"front end"
+    },
+    {
+        "id":2,
+        "title":"kasper Template",
+        "image-project":"images/Projects/kasperTemp.png",
+        "image-laptop":"images/Projects/Frame 2 (1).png",
+        "url":"#",
+        "type":"front end"
+    },
+    {
+        "id":3,
+        "title":"Elzero Template",
+        "image-project":"images/Projects/ElzeroTemp.png",
+        "image-laptop":"images/Projects/ElzeroTemp.png",
+        "url":"#",
+        "type":"front end"
+    },
+    {
+        "id":4,
+        "title":"Movie Site",
+        "image-project":"images/Projects/movieSite.png",
+        "image-laptop":"images/Projects/movieSite.png",
+        "url":"#",
+        "type":"front end"
+    },
+    {
+        "id":5,
+        "title":"sama media",
+        "image-project":"images/Projects/samaMedia.png",
+        "image-laptop":"images/Projects/samaMedia.png",
+        "url":"#",
+        "type":"back end"
+    }
+]
