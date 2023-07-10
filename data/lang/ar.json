@@ -1,0 +1,40 @@
+{
+    "header-about-title": "عني",
+    "header-services-title": "خدمات",
+    "header-projects-title": "مشاريع",
+    "header-certificates-title": "شهادات",
+    "header-contact-title": "تواصل",
+    "first-name":"ابوبكر",
+    "last-name":"الشيخ",
+
+    "home-welcoming": "أهلا بك!",
+    "home-introduction":"أنا",
+    "home-job":"مواقع",
+    "home-job-developer":"مطور",
+    "home-job-designer":"مصميم",
+    "home-text":"مع شغف لإنشاء مواقع الويب",
+    "home-text-beautiful":"جميلة",
+    "home-text-functional":"فعالة",
+    "home-button-projects":"انظر الي مشاريعي",
+    "home-button-contect":"تواصل معي",
+
+    "about-text-first":"أهلاً. مرحبا بك في موقع الويب الخاص بي. أنا مصمم ومطور ويب وأحب إنشاء مواقع ويب رائعة ومفيدة. أنا من سوريا حيث درست تكنولوجيا الحاسوب وهندسة المعلوماتية. لدي أيضًا الكثير من الخبرة التعليمية عبر الإنترنت من Coursera ، حيث تعلمت العديد من مهارات وتقنيات تصميم وتطوير الويب.",
+    "about-text-second":"أنا متحمس لإنشاء مواقع ويب تكون سريعة الاستجابة وجميلة وعملية. أحب أيضًا أن أتعلم أشياء جديدة وأتحدى نفسي في التفكير التصميمي ومشاكل الترميز. حلمي هو العمل في مشاريع تحدث فرقًا إيجابيًا في العالم.",
+    "about-text-last":"إذا كنت تريد معرفة المزيد عني أو عن عملي ، فلا تتردد في التواصل معي أو تصفح موقع الويب الخاص بي. أرغب في التواصل معك والعمل معك في مشروعك القادم.",
+
+    "services-frontend":"الواجهة الأمامية",
+    "services-frontend-text":"تنفيذ ميزات تفاعلية وحيوية لتحسين تفاعلات المستخدم.",
+    "services-Backend":"البنيه التحتيه",
+    "services-Backend-text":"تطوير تطبيقات من جانب الخادم قوية وقابلة للتطوير للتعامل مع معالجة البيانات ومنطق الأعمال.",
+    "services-Design":"تصميم",
+    "services-Design-text":"تصميم واجهات مستخدم جذابة وبديهية تعكس رؤية العميل وهوية علامته التجارية.",
+    
+    "projects-all-button":"الكل",
+    "projects-front end-button":"الواجهة الأمامية",
+    "projects-back end-button":"البنيه التحتيه",
+
+    "certificates-all-button":"الكل",
+    "certificates-specialization-button":"تخصص",
+    "certificates-course-button":"كورس"
+
+}

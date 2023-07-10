@@ -1,0 +1,41 @@
+{
+    "header-about-title": "about",
+    "header-services-title": "services",
+    "header-projects-title": "projects",
+    "header-certificates-title": "certificates",
+    "header-contact-title": "contact",
+    "first-name":"Abubakr",
+    "last-name":"Alsheikh",
+
+    "home-welcoming": "Hello there!",
+    "home-introduction":"I'm",
+    "home-job":"A web",
+    "home-job-developer":"developer",
+    "home-job-designer":"designer",
+    "home-text":"with a passion for creating websites are",
+    "home-text-beautiful":"beautiful",
+    "home-text-functional":"functional",
+    "home-button-projects":"See my projects",
+    "home-button-contect":"Talk to me",
+
+    "about-text-first":"Hi there. Welcome to my website. I’m a web designer and developer who loves to create amazing and useful websites. I am from Syria, where I studied Computer Technology and Informatics Engineering. I also have a lot of online learning experience from Coursera, where I learned many web design and development skills and techniques.",
+    "about-text-second":"I am passionate about making websites that are responsive, beautiful and functional. I also like to learn new things and challenge myself with design thinking and coding problems. My dream is to work on projects that make a positive difference in the world.",
+    "about-text-last":"If you want to know more about me or my work, feel free to reach out to me or browse my website. I would love to connect with you and work with you on your next project.",
+
+    "services-frontend":"Front end",
+    "services-frontend-text":"Implementing interactive features and animations to enhance user interactions.",
+    "services-Backend":"Back end",
+    "services-Backend-text":"Developing robust and scalable server-side applications to handle data processing and business logic.",
+    "services-Design":"Design",
+    "services-Design-text":"Designing engaging and intuitive user interfaces that reflect the client's vision and brand identity.",
+
+    "projects-all-button":"all",
+    "projects-front end-button":"front end",
+    "projects-back end-button":"back end",
+
+    "certificates-all-button":"all",
+    "certificates-specialization-button":"specialization",
+    "certificates-course-button":"course"
+
+    
+}

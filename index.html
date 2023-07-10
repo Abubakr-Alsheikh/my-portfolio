@@ -50,8 +50,13 @@
     <header>
       <div class="container text-shadow">
         <div class="logo">
-          <img src="images/logo.png" alt="" />
-          <h2><span>Abubakr</span><br /><span>Alsheikh</span></h2>
+          <img src="images/logo.png" alt="logo" />
+          <h2>
+            <span data-i18n="first-name">Abubakr</span><br /><span
+              data-i18n="last-name"
+              >Alsheikh</span
+            >
+          </h2>
         </div>
         <nav>
           <div class="toggle-menu">
@@ -62,11 +67,21 @@
           </div>
           <ul>
             <li style="display: none"><a href="#home">home</a></li>
-            <li><a href="#about">about</a></li>
-            <li><a href="#services">services</a></li>
-            <li><a href="#projects">projects</a></li>
-            <li><a href="#certificates">certificates</a></li>
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#about" data-i18n="header-about-title">about</a></li>
+            <li>
+              <a href="#services" data-i18n="header-services-title">services</a>
+            </li>
+            <li>
+              <a href="#projects" data-i18n="header-projects-title">projects</a>
+            </li>
+            <li>
+              <a href="#certificates" data-i18n="header-certificates-title"
+                >certificates</a
+              >
+            </li>
+            <li>
+              <a href="#contact" data-i18n="header-contact-title">contact</a>
+            </li>
           </ul>
         </nav>
         <div class="links">
@@ -77,14 +92,12 @@
               <li>عربي</li>
             </ul>
           </div>
-          <!-- <label class="switch">
-            <input type="checkbox" id="modeSwitch" />
-            <span class="slider round">
-              <i class="fas fa-sun"></i>
-              <i class="fas fa-moon"></i>
-            </span>
-          </label> -->
-          <button id="theme-toggle" onclick="toggleDarkMode()">
+          <button
+            id="theme-toggle"
+            onclick="toggleDarkMode()"
+            type="button"
+            title="DLightarkModeSwitch"
+          >
             <i class="fas fa-sun fa-2x"></i>
             <i class="fas fa-moon fa-2x"></i>
           </button>
@@ -96,20 +109,33 @@
     <section class="home" id="home">
       <div class="container hidden text-shadow">
         <div class="info">
-          <p class="intro">Hello there!</p>
-          <h1>I'm <span>Abubakr</span> <span>Alsheikh</span></h1>
-          <h1>A web <span>developer</span> and <span>designer</span></h1>
+          <p class="intro" data-i18n="home-welcoming">Hello there!</p>
+          <h1>
+            <sapn data-i18n="home-introduction">I'm</sapn>
+            <span data-i18n="first-name">Abubakr</span>
+            <span data-i18n="last-name">Alsheikh</span>
+          </h1>
+          <h1>
+            <sapn data-i18n="home-job">A web</sapn>
+            <span data-i18n="home-job-developer">developer</span> &
+            <span data-i18n="home-job-designer">designer</span>
+          </h1>
           <p>
-            with a passion for creating <span>beautiful</span> and
-            <span>functional</span> websites
+            <span data-i18n="home-text"
+              >with a passion for creating websites are</span
+            >
+            <span data-i18n="home-text-beautiful">beautiful</span> &
+            <span data-i18n="home-text-functional">functional</span>
           </p>
           <div class="button">
-            <a href="#projects">See my projects</a>
-            <a href="#contact">Talk to me</a>
+            <a href="#projects" data-i18n="home-button-projects"
+              >See my projects</a
+            >
+            <a href="#contact" data-i18n="home-button-contect">Talk to me</a>
           </div>
         </div>
         <div class="image">
-          <img src="images/image.png" alt="" />
+          <img src="images/image.png" alt="Abubakr Alsheikh" />
         </div>
       </div>
     </section>
@@ -141,38 +167,30 @@
         </svg>
       </div>
       <div class="f-sec-column bg-gray">
-        <h2 class="main-text hidden">About</h2>
+        <h2 class="main-text hidden" data-i18n="header-about-title">About</h2>
         <div class="container hidden text-shadow">
           <div class="image">
             <img src="images/about.png" alt="" />
           </div>
           <div class="text">
-            <p>
-              Hello there. Thanks for visiting my portfolio website. I’m a web
-              designer and developer who loves to discover new things and give
-              my best. I am from Syria, where I graduated from the Institute of
-              Computer Technology in Aleppo. I am also currently studying
-              Informatics Technology Engineering at the Syrian Virtual
-              University.
+            <p data-i18n="about-text-first">
+              Hi there. Welcome to my website. I’m a web designer and developer
+              who loves to create amazing and useful websites. I am from Syria,
+              where I studied Computer Technology and Informatics Engineering. I
+              also have a lot of online learning experience from Coursera, where
+              I learned many web design and development skills and techniques.
             </p>
-            <p>
-              My passion for web design and development started when I got a
-              grant from the Syrian Youth Gathering to access Coursera, an
-              online learning platform. There, I learned a lot of skills and
-              techniques that helped me create beautiful and functional
-              websites. I also gained a lot of confidence and motivation to
-              pursue my career goals.
+            <p data-i18n="about-text-second">
+              I am passionate about making websites that are responsive,
+              beautiful and functional. I also like to learn new things and
+              challenge myself with design thinking and coding problems. My
+              dream is to work on projects that make a positive difference in
+              the world.
             </p>
-            <p>
-              I enjoy creating websites that are responsive. I also like to
-              learn new things and solve problems using design thinking and
-              coding skills. My dream is to work on projects that make a
-              positive impact on people and society.
-            </p>
-            <p>
-              If you want to know more about me or my work, feel free to contact
-              me or check out my portfolio. I would love to hear from you and
-              collaborate with you on your next project.
+            <p data-i18n="about-text-last">
+              If you want to know more about me or my work, feel free to reach
+              out to me or browse my website. I would love to connect with you
+              and work with you on your next project.
             </p>
           </div>
         </div>
@@ -206,21 +224,21 @@
     <!-- start services -->
     <section class="services" id="services">
       <div class="f-sec-column">
-        <h2 class="main-text hidden">services</h2>
+        <h2 class="main-text hidden" data-i18n="header-services-title">services</h2>
         <div class="container text-shadow">
           <div class="servs">
             <div class="serv hidden">
               <img src="images/icons/frontend-icon.png" alt="" class="icon" />
               <div class="info">
                 <div class="headline">
-                  <h2>Front end</h2>
+                  <h2 data-i18n="services-frontend">Front end</h2>
                   <div class="pro">
                     <img src="images/icons/js-icon.png" alt="" />
                     <img src="images/icons/css-icon.png" alt="" />
                     <img src="images/icons/html-icon.png" alt="" />
                   </div>
                 </div>
-                <p>
+                <p data-i18n="services-frontend-text">
                   Implementing interactive features and animations to enhance
                   user interactions.
                 </p>
@@ -230,14 +248,14 @@
               <img src="images/icons/backend-icon.png" alt="" class="icon" />
               <div class="info">
                 <div class="headline">
-                  <h2>Back end</h2>
+                  <h2 data-i18n="services-Backend">Back end</h2>
                   <div class="pro">
                     <img src="images/icons/sql-icon.png" alt="" />
                     <img src="images/icons/php-icon.png" alt="" />
                     <!-- <img src="images/mysql-icon.png" alt="" /> -->
                   </div>
                 </div>
-                <p>
+                <p data-i18n="services-Backend-text">
                   Developing robust and scalable server-side applications to
                   handle data processing and business logic.
                 </p>
@@ -247,13 +265,13 @@
               <img src="images/icons/design-icon.png" alt="" class="icon" />
               <div class="info">
                 <div class="headline">
-                  <h2>Design</h2>
+                  <h2 data-i18n="services-Design">Design</h2>
                   <div class="pro">
                     <img src="images/icons/photoshop-icon.png" alt="" />
                     <img src="images/icons/figma-icon.png" alt="" />
                   </div>
                 </div>
-                <p>
+                <p data-i18n="services-Design-text">
                   Designing engaging and intuitive user interfaces that reflect
                   the client's vision and brand identity.
                 </p>
@@ -284,42 +302,10 @@
     <!-- start projects -->
     <section class="projects" id="projects">
       <div class="f-sec-column bg-gray">
-        <h2 class="main-text hidden">Projects</h2>
-        <div class="container hidden">
-          <!-- <div class="box">
-            <a
-              href="images/Projects/lona.png"
-              data-lightbox="project"
-              data-title="<a href='#'>See the site</a>"
-            >
-              <img src="images/Projects/Frame 1 (1).png" alt="" srcset="" />
-            </a>
-            <p>lona Template</p>
-          </div>
-          <div class="box">
-            <a href="images/Projects/kasperTemp.png" data-lightbox="project">
-              <img src="images/Projects/Frame 2 (1).png" alt="" srcset="" />
-            </a>
-            <p>kasper Template</p>
-          </div>
-          <div class="box">
-            <a href="images/Projects/ElzeroTemp.png" data-lightbox="project">
-              <img src="images/Projects/ElzeroTemp.png" alt="" srcset="" />
-            </a>
-            <p>Elzero Template</p>
-          </div>
-          <div class="box">
-            <a href="images/Projects/movieSite.png" data-lightbox="project">
-              <img src="images/Projects/movieSite.png" alt="" srcset="" />
-            </a>
-            <p>Movie Site</p>
-          </div>
-          <div class="box">
-            <a href="images/Projects/samaMedia.png" data-lightbox="project">
-              <img src="images/Projects/samaMedia.png" alt="" srcset="" />
-            </a>
-            <p>sama media</p>
-          </div> -->
+        <h2 class="main-text hidden" data-i18n="header-projects-title">Projects</h2>
+        <div class="items-btns-container hidden">
+          <div class="btns"></div>
+          <div class="container"></div>
         </div>
       </div>
       <div class="custom-shape-divider-top-1686917103">
@@ -340,47 +326,10 @@
 
     <!-- start certificates -->
     <section class="certificates f-sec-column" id="certificates">
-      <h2 class="main-text hidden">certificates</h2>
-      <div class="container hidden">
-        <!-- <div class="box hidden">
-          <a href="images/Certificates/html.jpeg" data-lightbox="certificates">
-            <img src="images/Certificates/html.jpeg" alt="" srcset="" />
-          </a>
-          <p>html</p>
-        </div>
-        <div class="box hidden">
-          <a href="images/Certificates/css.jpeg" data-lightbox="certificates">
-            <img src="images/Certificates/css.jpeg" alt="" srcset="" />
-          </a>
-          <p>css</p>
-        </div>
-        <div class="box hidden">
-          <a
-            href="images/Certificates/advanced-css.jpeg"
-            data-lightbox="certificates"
-          >
-            <img src="images/Certificates/advanced-css.jpeg" alt="" srcset="" />
-          </a>
-          <p>advanced css</p>
-        </div>
-        <div class="box hidden">
-          <a href="images/Certificates/js.jpeg" data-lightbox="certificates">
-            <img src="images/Certificates/js.jpeg" alt="" srcset="" />
-          </a>
-          <p>JavaScript</p>
-        </div>
-        <div class="box hidden">
-          <a href="images/Certificates/php.jpeg" data-lightbox="certificates">
-            <img src="images/Certificates/php.jpeg" alt="" srcset="" />
-          </a>
-          <p>php</p>
-        </div>
-        <div class="box hidden">
-          <a href="images/Certificates/WD4B.jpeg" data-lightbox="certificates">
-            <img src="images/Certificates/WD4B.jpeg" alt="" srcset="" />
-          </a>
-          <p>Webdesign for everybody</p>
-        </div> -->
+      <h2 class="main-text hidden" data-i18n="header-certificates-title">certificates</h2>
+      <div class="items-btns-container hidden">
+        <div class="btns"></div>
+        <div class="container"></div>
       </div>
     </section>
     <!-- end certificates -->
@@ -401,7 +350,7 @@
         </svg>
       </div>
       <div class="f-sec-column bg-gray">
-        <h2 class="main-text hidden">contact</h2>
+        <h2 class="main-text hidden" data-i18n="header-contact-title">contact</h2>
         <div class="container text-shadow">
           <div class="info">
             <div class="box hidden">
@@ -412,7 +361,7 @@
               <div class="other">
                 <p>+963 980 235 562</p>
                 <div class="links">
-                  <a href="https://wa.me/963980235562" target="_blank">
+                  <a href="https://wa.me/963980235562" target="_blank" title="wahtsapp" rel="noopener">
                     <i class="fab fa-whatsapp fa-2x fa-fw"></i>
                   </a>
                   <a href="tg://resolve?domain=AbubakrAlsheikh" target="_blank">
@@ -481,7 +430,7 @@
     <p id="my-form-status"></p>
 
     <footer>
-      <div class="container hidden">
+      <div class="container">
         <p>&copy;2023 - Abubakr Alsheikh</p>
       </div>
     </footer>
@@ -489,8 +438,57 @@
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/lightbox.min.js"></script>
     <script src="js/script.js"></script>
-    <script type="module" src="js/handleData.js"></script>
+    <script>
+      let form = document.getElementById("my-form");
+      let status = document.getElementById("my-form-status");
 
-    <script></script>
+      function ShowStats(color) {
+        status.classList.add("show");
+        status.style.backgroundColor = color;
+        setTimeout(function () {
+          status.classList.remove("show");
+        }, 3000);
+      }
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        let data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              ShowStats("#A5D6A7");
+              status.innerHTML = "Thanks for your submission!";
+              form.reset();
+            } else {
+              response.json().then((data) => {
+                ShowStats("#E53935");
+                if (Object.hasOwn(data, "errors")) {
+                  status.innerHTML = data["errors"]
+                    .map((error) => error["message"])
+                    .join(", ");
+                } else {
+                  status.innerHTML =
+                    "Oops! There was a problem submitting your form";
+                }
+              });
+            }
+          })
+          .catch((error) => {
+            ShowStats("#E53935");
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
+      }
+
+      form.addEventListener("submit", handleSubmit);
+    </script>
+    <script type="module" src="js/handleData.js"></script>
+    <script type="module" src="js/translate.js"></script>
+    
   </body>
 </html>

@@ -11,34 +11,34 @@
         "title":"php",
         "image":"images/Certificates/php.jpeg",
         "url":"#",
-        "type":"certificate"
+        "type":"course"
     },
     {
         "id":3,
         "title":"JavaScript",
         "image":"images/Certificates/js.jpeg",
         "url":"#",
-        "type":"certificate"
+        "type":"course"
     },
     {
         "id":4,
         "title":"advanced css",
         "image":"images/Certificates/advanced-css.jpeg",
         "url":"#",
-        "type":"certificate"
+        "type":"course"
     },
     {
         "id":5,
         "title":"css",
         "image":"images/Certificates/css.jpeg",
         "url":"#",
-        "type":"certificate"
+        "type":"course"
     },
     {
         "id":6,
         "title":"html",
         "image":"images/Certificates/html.jpeg",
         "url":"#",
-        "type":"certificate"
+        "type":"course"
     }
 ]

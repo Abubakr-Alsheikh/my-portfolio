@@ -712,12 +712,12 @@ header .slider .fa-moon {
   font-size: 32px;
   font-weight: lighter;
 }
-.home .container .info h1 span:first-child,
+.home .container .info h1 span:nth-child(2),
 .home .container .info p span:last-child {
   color: var(--orange-color);
 }
 .home .container .info h1 span:last-child,
-.home .container .info p span:first-child {
+.home .container .info p span:nth-child(2) {
   color: var(--blue-color);
 }
 .home .container .info .button {
@@ -780,6 +780,7 @@ header .slider .fa-moon {
     flex-direction: column;
     align-items: center;
     margin: 20px 0 40px;
+    flex-direction: column-reverse;
   }
   .home .container .info .button button {
     margin: 10px 0;
@@ -963,6 +964,7 @@ header .slider .fa-moon {
 /* start projects and certificates */
 .projects .container,
 .certificates .container {
+  min-height: 100vh;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
@@ -1012,6 +1014,33 @@ header .slider .fa-moon {
   border-radius: var(--b-r);
   min-width: 120px;
   text-shadow: 0 0 var(--text-shadow-theme);
+}
+.projects .items-btns-container .btns,
+.certificates .items-btns-container .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.projects .items-btns-container button,
+.certificates .items-btns-container button {
+  min-width: 100px;
+  text-transform: capitalize;
+  padding: 10px 15px;
+  color: var(--darkPinkRed-color);
+  border: 1px solid var(--darkPinkRed-color);
+  border-radius: 8px;
+  font-size: 1.1rem;
+  background: var(--bg-theme-color);
+}
+.certificates .items-btns-container button {
+  background: var(--bg-color);
+}
+.projects .items-btns-container button.active,
+.certificates .items-btns-container button.active {
+  background-color: var(--darkPinkRed-color);
+  color: var(--bg-theme-color);
 }
 /* end projects and certificates */
 /* #endregion */
