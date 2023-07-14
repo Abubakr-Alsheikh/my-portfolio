@@ -1,3 +1,6 @@
+import ar from "../data/lang/ar.json" assert { type: "json" };
+import en from "../data/lang/en.json" assert { type: "json" };
+
 class Translator {
   constructor() {
     this._lang = this.getLanguage();
@@ -16,8 +19,11 @@ class Translator {
       if (!window.I18N_LANGUAGES.includes(lang)) return;
       this._lang = lang;
     }
-    let translation = await Translator.getTranslation(this._lang);
-    this.translate(translation);
+    // let translation = await Translator.getTranslation(this._lang);
+    console.log(this._lang);
+    console.log(en);
+    if (this._lang == "en") this.translate(en);
+    else this.translate(ar);
     this.toggleLangTag();
   }
 
@@ -41,7 +47,12 @@ class Translator {
 
   static async getTranslation(lang) {
     try {
-      let translation = await fetch(`../data/lang/${lang}.json`);
+      let translation;
+      if (lang == "en") {
+        translation = await fetch("../data/lang/en.json");
+      } else {
+        translation = await fetch("../data/lang/ar.json");
+      }
       return await translation.json();
     } catch (err) {
       console.error(err);
@@ -54,7 +65,8 @@ let activeItem = document.querySelector(".language li.active");
 listItems.forEach((item) => {
   item.addEventListener("click", () => {
     let lang = item.textContent === "English" ? "en" : "ar";
-    if(lang == "ar") document.dir = "rtl"; else document.dir = "ltr";
+    if (lang == "ar") document.dir = "rtl";
+    else document.dir = "ltr";
     translator.load(lang);
     activeItem.classList.remove("active");
     item.classList.add("active");
@@ -62,14 +74,10 @@ listItems.forEach((item) => {
   });
 });
 
-
-let translator=null;
-window.addEventListener("DOMContentLoaded",()=>{
-    console.log("object Lang");
-    translator = new Translator();
-    window.I18N_LANGUAGES = ["en", "ar"];
-    translator.load();
-})
-
-
- 
+let translator = null;
+window.addEventListener("DOMContentLoaded", () => {
+  console.log("object Lang");
+  translator = new Translator();
+  window.I18N_LANGUAGES = ["en", "ar"];
+  translator.load();
+});
