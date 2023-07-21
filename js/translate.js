@@ -20,8 +20,6 @@ class Translator {
       this._lang = lang;
     }
     // let translation = await Translator.getTranslation(this._lang);
-    console.log(this._lang);
-    console.log(en);
     if (this._lang == "en") this.translate(en);
     else this.translate(ar);
     this.toggleLangTag();
@@ -37,6 +35,12 @@ class Translator {
         element.innerHTML = element.dataset.i18n;
       }
     });
+
+    document.querySelector("[name='name']").placeholder = translation["content-input-fullanme"];
+    document.querySelector("[name='email']").placeholder = translation["content-input-email"];
+    document.querySelector("[name='project']").placeholder = translation["content-input-project"];
+    document.querySelector("[name='message']").placeholder = translation["content-input-message"];
+    document.getElementById("my-form-button").value = translation["content-submit-button"];
   }
 
   toggleLangTag() {

@@ -1,0 +1,23 @@
+html[lang="ar"] header ul li a {
+  letter-spacing: 0;
+  font-size: 1.2rem;
+}
+
+html[lang="ar"] header .links::after {
+  right: 16px;
+}
+
+html[lang="ar"] .contact .container form input,
+html[lang="ar"] .contact .container form textarea{
+    padding: 10px 50px 10px 20px;
+}
+
+html[lang="ar"] .contact .container form i {
+    transform: translate(-7px, 5px);
+}
+
+@media (min-width: 767px) {
+  html[lang="ar"] .home .container .info {
+    width: 530px;
+  }
+}

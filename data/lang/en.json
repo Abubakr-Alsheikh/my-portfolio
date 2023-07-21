@@ -1,5 +1,5 @@
 {
-    "header-about-title": "about",
+    "header-about-title": "about me",
     "header-services-title": "services",
     "header-projects-title": "projects",
     "header-certificates-title": "certificates",
@@ -35,7 +35,12 @@
 
     "certificates-all-button":"all",
     "certificates-specialization-button":"specialization",
-    "certificates-course-button":"course"
+    "certificates-course-button":"course",
 
+    "content-input-fullanme":"Full name...",
+    "content-input-email":"Email...",
+    "content-input-project":"Project...",
+    "content-input-message":"Tell me what you want...",
+    "content-submit-button":"Send message"
     
 }

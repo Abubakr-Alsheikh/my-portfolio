@@ -35,6 +35,12 @@
 
     "certificates-all-button":"الكل",
     "certificates-specialization-button":"تخصص",
-    "certificates-course-button":"كورس"
+    "certificates-course-button":"كورس",
+
+    "content-input-fullanme":"الاسم...",
+    "content-input-email":"الايميل...",
+    "content-input-project":"المشروع...",
+    "content-input-message":"قل لي ماذا تريد...",
+    "content-submit-button":"ارسل الرسالة"
 
 }
