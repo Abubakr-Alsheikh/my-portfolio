@@ -80,7 +80,6 @@ listItems.forEach((item) => {
 
 let translator = null;
 window.addEventListener("DOMContentLoaded", () => {
-  console.log("object Lang");
   translator = new Translator();
   window.I18N_LANGUAGES = ["en", "ar"];
   translator.load();

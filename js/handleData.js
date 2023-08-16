@@ -2,14 +2,14 @@ import projects from "../data/projects.json" assert { type: "json" };
 import certificates from "../data/certificates.json" assert { type: "json" };
 // import { Translator } from "./translate.js";
 
-
-
 window.addEventListener("DOMContentLoaded", function () {
-  console.log("object DOM");
   showProjects(projects);
   showProjectBtns();
 
-  showCertificates(certificates);
+  // showCertificates(certificates);
+  showCertificates(certificates.reverse().filter(function (certificate) {
+    return certificate.type == "specialization";
+  }))
   showCertificateBtns();
 });
 
@@ -56,7 +56,7 @@ function showProjectBtns() {
       return `<button data-type="${type}" data-i18n="projects-${type}-button" class="${type == "all" ? "active" : ""}"  >${type}</button>`;
     })
     .join("");
-  }
+}
 
 // Certificates
 const certSection = document.querySelector(".certificates .container");
@@ -96,7 +96,7 @@ function showCertificateBtns() {
   );
   certBtns.innerHTML = typeBtns
     .map(function (type) {
-      return `<button data-type="${type}" class="${type == "all" ? "active" : ""}" data-i18n="certificates-${type}-button" >${type}</button>`;
+      return `<button data-type="${type}" class="${type == "specialization" ? "active" : ""}" data-i18n="certificates-${type}-button" >${type}</button>`;
     })
     .join("");
 }

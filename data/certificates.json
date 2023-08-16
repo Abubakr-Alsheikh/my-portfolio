@@ -1,43 +1,86 @@
 [
+    
     {
         "id":1,
-        "title":"Webdesign for everybody",
-        "image":"images/Certificates/WD4B.jpeg",
+        "title":"html",
+        "image":"https://drive.google.com/uc?id=1R3Ejfo6ZoowmbkFQ8jnNxbXAaQ8Wdc4A",
         "url":"#",
-        "type":"specialization"
+        "type":"course"
     },
     {
         "id":2,
-        "title":"php",
-        "image":"images/Certificates/php.jpeg",
+        "title":"css",
+        "image":"https://drive.google.com/uc?id=1Kq5VnntnEM_S51B98rJoMZB1wooZk2Zk",
         "url":"#",
         "type":"course"
     },
     {
         "id":3,
-        "title":"JavaScript",
-        "image":"images/Certificates/js.jpeg",
+        "title":"advanced css",
+        "image":"https://drive.google.com/uc?id=1xAxJLNCNuSSQ4c7Teu4d5_eqegZdxcGC",
         "url":"#",
         "type":"course"
     },
     {
         "id":4,
-        "title":"advanced css",
-        "image":"images/Certificates/advanced-css.jpeg",
+        "title":"JavaScript",
+        "image":"https://drive.google.com/uc?id=1gZv2uxi9EwFNzA7zF-bJVWT35cMBEI5D",
         "url":"#",
         "type":"course"
     },
     {
         "id":5,
-        "title":"css",
-        "image":"images/Certificates/css.jpeg",
+        "title":"Web Design for Everybody Capstone",
+        "image":"https://drive.google.com/uc?id=1EPP17s8uHyu6pH-K63qQsBej1IHGcLuh",
         "url":"#",
         "type":"course"
     },
     {
         "id":6,
-        "title":"html",
-        "image":"images/Certificates/html.jpeg",
+        "title":"Webdesign for everybody",
+        "image":"https://drive.google.com/uc?id=1u0zTI06WLUegGZ9IIUTblb8jKNzCzy4u",
+        "url":"#",
+        "type":"specialization"
+    },
+    {
+        "id":7,
+        "title":"Building Web Applications in PHP",
+        "image":"https://drive.google.com/uc?id=1rBvSI9AO9RtZtSF5cGiMkhg0pQF1iMkx",
+        "url":"#",
+        "type":"course"
+    },
+    {
+        "id":8,
+        "title":"Structured Query Language",
+        "image":"https://drive.google.com/uc?id=16_lzcyoxaMI2jU3AfMI74lRy6gp5yGGY",
+        "url":"#",
+        "type":"course"
+    },
+    {
+        "id":9,
+        "title":"JavaScript, jQuery, and JSON",
+        "image":"https://drive.google.com/uc?id=1ve8MqhSwqUj2E5BebxRMA6vstG_JXTcP",
+        "url":"#",
+        "type":"course"
+    },
+    {
+        "id":10,
+        "title":"Building Database Applications",
+        "image":"https://drive.google.com/uc?id=1sSyqTUsXSgbw5HwbvmbxUPBbEPiQ9K3A",
+        "url":"#",
+        "type":"course"
+    },
+    {
+        "id":11,
+        "title":"Web Applications for Everybody",
+        "image":"https://drive.google.com/uc?id=1h1Jh86p7TNFR7tA6BDISspybVT2ibNyY",
+        "url":"#",
+        "type":"specialization"
+    },
+    {
+        "id":12,
+        "title":"Python",
+        "image":"https://drive.google.com/uc?id=1p8zH9ZirjS5elPuApden6_lhWAYm63PX",
         "url":"#",
         "type":"course"
     }

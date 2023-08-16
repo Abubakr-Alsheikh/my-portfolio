@@ -68,7 +68,9 @@
           </div>
           <ul>
             <li style="display: none"><a href="#home">home</a></li>
-            <li><a href="#about" data-i18n="header-about-title">about me</a></li>
+            <li>
+              <a href="#about" data-i18n="header-about-title">about me</a>
+            </li>
             <li>
               <a href="#services" data-i18n="header-services-title">services</a>
             </li>
@@ -136,7 +138,10 @@
           </div>
         </div>
         <div class="image">
-          <img src="images/image.png" alt="Abubakr Alsheikh" />
+          <img
+            src="https://drive.google.com/uc?id=1fnaay_D6P3bjilBwyAHjR3WngZT4SzF5"
+            alt="Abubakr Alsheikh"
+          />
         </div>
       </div>
     </section>
@@ -171,7 +176,7 @@
         <h2 class="main-text hidden" data-i18n="header-about-title">About</h2>
         <div class="container hidden text-shadow">
           <div class="image">
-            <img src="images/about.png" alt="" />
+            <img src="https://drive.google.com/uc?id=1xGKZDGN52rxOoiC1mPgjYehWaR3AJP3F" alt="" />
           </div>
           <div class="text">
             <p data-i18n="about-text-first">
@@ -225,7 +230,9 @@
     <!-- start services -->
     <section class="services" id="services">
       <div class="f-sec-column">
-        <h2 class="main-text hidden" data-i18n="header-services-title">services</h2>
+        <h2 class="main-text hidden" data-i18n="header-services-title">
+          services
+        </h2>
         <div class="container text-shadow">
           <div class="servs">
             <div class="serv hidden">
@@ -280,7 +287,7 @@
             </div>
           </div>
           <div class="image hidden">
-            <img src="images/services.jpg" alt="" />
+            <img src="https://drive.google.com/uc?id=1zzAf2qRy6Frl4x7nTzYFkwUGSL3avRz-" alt="" />
           </div>
         </div>
       </div>
@@ -303,7 +310,9 @@
     <!-- start projects -->
     <section class="projects" id="projects">
       <div class="f-sec-column bg-gray">
-        <h2 class="main-text hidden" data-i18n="header-projects-title">Projects</h2>
+        <h2 class="main-text hidden" data-i18n="header-projects-title">
+          Projects
+        </h2>
         <div class="items-btns-container hidden">
           <div class="btns"></div>
           <div class="container"></div>
@@ -327,7 +336,9 @@
 
     <!-- start certificates -->
     <section class="certificates f-sec-column" id="certificates">
-      <h2 class="main-text hidden" data-i18n="header-certificates-title">certificates</h2>
+      <h2 class="main-text hidden" data-i18n="header-certificates-title">
+        certificates
+      </h2>
       <div class="items-btns-container hidden">
         <div class="btns"></div>
         <div class="container"></div>
@@ -351,7 +362,9 @@
         </svg>
       </div>
       <div class="f-sec-column bg-gray">
-        <h2 class="main-text hidden" data-i18n="header-contact-title">contact</h2>
+        <h2 class="main-text hidden" data-i18n="header-contact-title">
+          contact
+        </h2>
         <div class="container text-shadow">
           <div class="info">
             <div class="box hidden">
@@ -362,7 +375,12 @@
               <div class="other">
                 <p>+963 980 235 562</p>
                 <div class="links">
-                  <a href="https://wa.me/963980235562" target="_blank" title="wahtsapp" rel="noopener">
+                  <a
+                    href="https://wa.me/963980235562"
+                    target="_blank"
+                    title="wahtsapp"
+                    rel="noopener"
+                  >
                     <i class="fab fa-whatsapp fa-2x fa-fw"></i>
                   </a>
                   <a href="tg://resolve?domain=AbubakrAlsheikh" target="_blank">
@@ -451,6 +469,8 @@
         }, 3000);
       }
 
+      form.addEventListener("submit", handleSubmit);
+
       async function handleSubmit(event) {
         event.preventDefault();
         let data = new FormData(event.target);
@@ -485,11 +505,8 @@
             status.innerHTML = "Oops! There was a problem submitting your form";
           });
       }
-
-      form.addEventListener("submit", handleSubmit);
     </script>
     <script type="module" src="js/handleData.js"></script>
     <script type="module" src="js/translate.js"></script>
-    
   </body>
 </html>
