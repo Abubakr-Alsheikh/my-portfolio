@@ -68,7 +68,8 @@ function showCertificates(certificateData) {
         data-lightbox="certificates" 
         data-title="<a href='${certificate.url}'>See the certificate</a>"
         >
-          <img src="${certificate.image}" alt="${certificate.title}" srcset="" />
+          <img src="${certificate.image}" alt="${certificate.title}" srcset=""
+          width="320px" height="260px"/>
         </a>
         <p>${certificate.title}</p>
       </div>`;

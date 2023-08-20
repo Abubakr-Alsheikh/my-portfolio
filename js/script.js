@@ -18,6 +18,11 @@ hidenElements.forEach((element) => observer.observe(element));
 function toggleDarkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+  if(element.classList.contains("dark-mode")){
+    document.querySelector(".home .container .image img").setAttribute("src","https://drive.google.com/uc?id=1fnaay_D6P3bjilBwyAHjR3WngZT4SzF5");
+  }else{
+    document.querySelector(".home .container .image img").setAttribute("src","https://drive.google.com/uc?id=1G7LI0Sdal0kZJ4dTQWYVPs-XTlv1e7dd");
+  }
 }
 
 // Scroll script
