@@ -4,84 +4,119 @@
         "id":1,
         "title":"html",
         "image":"https://drive.google.com/uc?id=1R3Ejfo6ZoowmbkFQ8jnNxbXAaQ8Wdc4A",
-        "url":"#",
+        "url":"https://coursera.org/verify/8S9XQWSE88KB",
         "type":"course"
     },
     {
         "id":2,
         "title":"css",
         "image":"https://drive.google.com/uc?id=1Kq5VnntnEM_S51B98rJoMZB1wooZk2Zk",
-        "url":"#",
+        "url":"https://coursera.org/verify/4HSBD74W3G4Z",
         "type":"course"
     },
     {
         "id":3,
         "title":"advanced css",
         "image":"https://drive.google.com/uc?id=1xAxJLNCNuSSQ4c7Teu4d5_eqegZdxcGC",
-        "url":"#",
+        "url":"https://coursera.org/verify/A9KWRLGVX4TU",
         "type":"course"
     },
     {
         "id":4,
         "title":"JavaScript",
         "image":"https://drive.google.com/uc?id=1gZv2uxi9EwFNzA7zF-bJVWT35cMBEI5D",
-        "url":"#",
+        "url":"https://coursera.org/verify/UFXA6LEWMAKK",
         "type":"course"
     },
     {
         "id":5,
         "title":"Web Design for Everybody Capstone",
         "image":"https://drive.google.com/uc?id=1EPP17s8uHyu6pH-K63qQsBej1IHGcLuh",
-        "url":"#",
+        "url":"https://coursera.org/verify/N9FUPRBZNUHW",
         "type":"course"
     },
     {
         "id":6,
         "title":"Webdesign for everybody",
         "image":"https://drive.google.com/uc?id=1u0zTI06WLUegGZ9IIUTblb8jKNzCzy4u",
-        "url":"#",
+        "url":"https://coursera.org/verify/specialization/UERU9T5YRQWS",
         "type":"specialization"
     },
     {
         "id":7,
         "title":"Building Web Applications in PHP",
         "image":"https://drive.google.com/uc?id=1rBvSI9AO9RtZtSF5cGiMkhg0pQF1iMkx",
-        "url":"#",
+        "url":"https://coursera.org/verify/9MW68H78WDKS",
         "type":"course"
     },
     {
         "id":8,
         "title":"Structured Query Language",
         "image":"https://drive.google.com/uc?id=16_lzcyoxaMI2jU3AfMI74lRy6gp5yGGY",
-        "url":"#",
+        "url":"https://coursera.org/verify/BNBWX3J4S8V4",
         "type":"course"
     },
     {
         "id":9,
-        "title":"JavaScript, jQuery, and JSON",
-        "image":"https://drive.google.com/uc?id=1ve8MqhSwqUj2E5BebxRMA6vstG_JXTcP",
-        "url":"#",
+        "title":"Building Database Applications",
+        "image":"https://drive.google.com/uc?id=1sSyqTUsXSgbw5HwbvmbxUPBbEPiQ9K3A",
+        "url":"https://coursera.org/verify/F84744HRCDRL",
         "type":"course"
     },
     {
         "id":10,
-        "title":"Building Database Applications",
-        "image":"https://drive.google.com/uc?id=1sSyqTUsXSgbw5HwbvmbxUPBbEPiQ9K3A",
-        "url":"#",
+        "title":"JavaScript, jQuery, and JSON",
+        "image":"https://drive.google.com/uc?id=1ve8MqhSwqUj2E5BebxRMA6vstG_JXTcP",
+        "url":"https://coursera.org/verify/SCNXSMBPQAFR",
         "type":"course"
     },
     {
         "id":11,
         "title":"Web Applications for Everybody",
         "image":"https://drive.google.com/uc?id=1h1Jh86p7TNFR7tA6BDISspybVT2ibNyY",
-        "url":"#",
+        "url":"https://coursera.org/verify/specialization/F7RBLWC5AGB3",
         "type":"specialization"
     },
     {
         "id":12,
-        "title":"Python",
+        "title":"Getting Started with Python",
         "image":"https://drive.google.com/uc?id=1p8zH9ZirjS5elPuApden6_lhWAYm63PX",
-        "url":"#",
+        "url":"https://coursera.org/verify/RH57HCNB8FP7",
         "type":"course"
+    },
+    {
+        "id":13,
+        "title":"Python Data Structures",
+        "image":"https://drive.google.com/uc?id=1nUeEUeJFtlyxsf8JOomNlp-Ov-JyTILh",
+        "url":"https://coursera.org/verify/2RUMELQB6PBZ",
+        "type":"course"
+    },
+    {
+        "id":14,
+        "title":"Using Python to Access Web Data",
+        "image":"https://drive.google.com/uc?id=1FH6KUH9W1gHkB-8lQ2hiDJE3Po4ko_YA",
+        "url":"https://coursera.org/verify/N2657JBVMH8A",
+        "type":"course"
+    },
+    {
+        "id":15,
+        "title":"Using Databases with Python",
+        "image":"https://drive.google.com/uc?id=1YFsBJzCdftz0coV_fGYbm4GDMn2xTo8E",
+        "url":"https://coursera.org/verify/SAR286WGSPVY",
+        "type":"course"
+    },
+    {
+        "id":16,
+        "title":"Capstone: R.P.V Data with Python",
+        "image":"https://drive.google.com/uc?id=1uJEXKfoPC7r6xK_UM8GMsyNfYx4BDF0R",
+        "url":"https://coursera.org/verify/VBQTN7HY99VE",
+        "type":"course"
+    },
+    {
+        "id":17,
+        "title":"Python for Everybody",
+        "image":"https://drive.google.com/uc?id=1nbRzJac-f-tYg834Pe1bpCp9FFFV613Z",
+        "url":"https://coursera.org/verify/specialization/QTNT2MHPT8M7",
+        "type":"specialization"
     }
 ]
