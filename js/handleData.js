@@ -3,7 +3,7 @@ import certificates from "../data/certificates.json" assert { type: "json" };
 // import { Translator } from "./translate.js";
 
 window.addEventListener("DOMContentLoaded", function () {
-  showProjects(projects);
+  showProjects(projects.reverse());
   showProjectBtns();
 
   // showCertificates(certificates);
@@ -66,7 +66,7 @@ function showCertificates(certificateData) {
         <a 
         href="${certificate.image}" 
         data-lightbox="certificates" 
-        data-title="<a href='${certificate.url}'>See the certificate</a>"
+        data-title="If you want to see the certificate <a href='${certificate.url}' target='_blank'>Click Here</a>"
         >
           <img src="${certificate.image}" alt="${certificate.title}" srcset=""
           width="320px" height="260px"/>

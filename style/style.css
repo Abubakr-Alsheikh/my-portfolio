@@ -968,9 +968,6 @@ header .slider .fa-moon {
 /* end services */
 /* #endregion */
 
-/* end certificates */
-/* #endregion */
-
 /* #region p_c */
 /* start projects and certificates */
 .projects .container,
@@ -979,7 +976,6 @@ header .slider .fa-moon {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
 }
-
 .projects .container .box,
 .certificates .container .box {
   position: relative;
@@ -993,12 +989,9 @@ header .slider .fa-moon {
   filter: grayscale(1);
   transition: transform ease 0.5s, box-shadow ease 0.5s, filter ease 1s;
 }
-
-
 .certificates .container .box {
   background-color: var(--bg-color);
 }
-
 .projects .container .box:hover,
 .certificates .container .box:hover {
   transform: translateY(-5px);
@@ -1071,11 +1064,9 @@ header .slider .fa-moon {
 
 /* #region Pojects */
 /* start projects */
-
 .projects {
   position: relative;
 }
-
 /* end projects */
 /* #endregion */
 
@@ -1093,6 +1084,33 @@ header .slider .fa-moon {
   height: 100%;
   width: 100%;
 }
+.certificates .container .box{
+  overflow: visible;
+}
+.projects .container .box:first-child::after,
+.certificates .container .box:first-child::after{
+  content: "Newest";
+  position: absolute;
+  top: 31px;
+  right: 0px;
+  background-color: #FFF176;
+  padding: 5px 40px 5px 25px;
+  transform: rotate(90deg);
+  border-radius: 8px 0 0 8px;
+}
+.projects .container .box:first-child::before,
+.certificates .container .box:first-child::before{
+  content: "";
+  position: absolute;
+  top: 60px;
+  right: 44.1px;
+  z-index: 1000;
+  border: 15px solid;
+  border-bottom: 30px solid;
+  border-color: transparent transparent white transparent;
+}
+/* end certificates */
+/* #endregion */
 
 /* #region contact */
 /* start contact */
