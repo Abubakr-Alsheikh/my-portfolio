@@ -3,13 +3,16 @@ import certificates from "../data/certificates.json" assert { type: "json" };
 // import { Translator } from "./translate.js";
 
 window.addEventListener("DOMContentLoaded", function () {
+  console.log("object");
   showProjects(projects.reverse());
   showProjectBtns();
 
   // showCertificates(certificates);
-  showCertificates(certificates.reverse().filter(function (certificate) {
-    return certificate.type == "specialization";
-  }))
+  showCertificates(
+    certificates.reverse().filter(function (certificate) {
+      return certificate.type == "specialization";
+    })
+  );
   showCertificateBtns();
 });
 
@@ -21,7 +24,7 @@ function showProjects(projectData) {
             <a
             href="${project["image-project"]}"
             data-lightbox="project"
-            data-title="<a href='${project.url}'>See the website</a>"
+            data-title="You can see the website by <a href='${project.url}' target='_blank'>Clicking Here</a>"
             >
             <img src="${project["image-laptop"]}" alt="${project.title}" srcset="" />
             </a>

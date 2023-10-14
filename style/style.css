@@ -88,13 +88,12 @@ img {
 
 .image {
   max-width: 500px;
-  background-color: var(--bg-color);
-  border-radius: 20px;
+  border-radius: var(--b-r);
 }
 .image img {
   width: 100%;
   border-radius: var(--b-r);
-  box-shadow: 0 0 10px var(--text-color);
+  box-shadow: 0 0 20px var(--text-color);
 }
 @media (max-width: 1200px) {
   .image {
@@ -106,12 +105,6 @@ img {
     max-width: 350px;
   }
 }
-@media (max-width: 480px) {
-  .image {
-    max-width: 300px;
-  }
-}
-
 /* end global Rules */
 
 /* start componants */
@@ -496,20 +489,6 @@ header .links {
   width: 160px;
   gap: 16px;
 }
-header .links::after {
-  content: "";
-  position: absolute;
-  left: 16px;
-  width: 2px;
-  height: 100%;
-  background-color: var(--text-color);
-  border-radius: var(--b-r);
-}
-@media (min-width: 992px) {
-  header .links::after {
-    display: none;
-  }
-}
 header .links img {
   transition: var(--transition-time);
   filter: invert(0.3);
@@ -610,64 +589,7 @@ header .language ul li.active {
 header .language ul li:first-child {
   border-bottom: 1px solid var(--text-color);
 }
-
-/* header .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-header .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-header .slider {
-  position: absolute;
-  cursor: pointer;
-  inset: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 34px;
-}
-
-header .slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-header input:checked + .slider:before {
-  transform: translateX(26px);
-}
-
-header .slider i {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
-}
-
-header .slider .fa-sun {
-  left: 7px;
-  color: yellow;
-}
-
-header .slider .fa-moon {
-  right: 7px;
-  color: black;
-} */
-
 #theme-toggle {
-  /* add your button styles here */
   border: none;
   background: none;
   cursor: pointer;
@@ -693,7 +615,6 @@ header .slider .fa-moon {
 }
 
 /* end header */
-
 /*#endregion */
 
 /* #region home */
@@ -710,12 +631,8 @@ header .slider .fa-moon {
   justify-content: space-between;
 }
 .home .container .image {
-  height: 500px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 3px -3px 20px var(--text-color);
+  /* overflow: hidden;
+  box-shadow: 3px -3px 20px var(--text-color); */
 }
 @media (max-width: 1200px) {
   .home .container .image {
@@ -726,12 +643,6 @@ header .slider .fa-moon {
   .home .container .image {
     height: 300px;
   }
-}
-.home .container .image img {
-  position: relative;
-  bottom: -30px;
-  width: 100%;
-  transition: all var(--transition-time);
 }
 .home .container .info {
   line-height: 2.5;
@@ -832,14 +743,19 @@ header .slider .fa-moon {
 }
 .about .container .text {
   width: 700px;
+  height: 100%;
   line-height: 1.5;
   letter-spacing: 1.1px;
   color: var(--text-color);
   text-align: justify;
-  margin-left: 64px;
-  margin-right: 64px;
+  margin-right: 16px;
+  margin-left: 16px;
+  background: var(--bg-theme-color);
+  padding: 32px;
+  border-radius: var(--b-r);
+  box-shadow: 0 5px 10px var(--text-color);
 }
-.about .container .text p {
+.about .container .text p:not(:last-child) {
   margin-bottom: 32px;
 }
 @media (max-width: 991px) {
@@ -850,7 +766,8 @@ header .slider .fa-moon {
     width: 100%;
     text-align: center;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 /* end about */
@@ -883,7 +800,7 @@ header .slider .fa-moon {
   background-color: var(--bg-color);
   color: var(--text-color);
   border-radius: var(--b-r);
-  box-shadow: 0 0 10px var(--text-color);
+  box-shadow: 0 5px 10px var(--text-color);
 }
 .services .container .servs .serv > img {
   width: 128px;
@@ -986,8 +903,7 @@ header .slider .fa-moon {
   text-transform: capitalize;
   overflow: hidden;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-  filter: grayscale(1);
-  transition: transform ease 0.5s, box-shadow ease 0.5s, filter ease 1s;
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
 }
 .certificates .container .box {
   background-color: var(--bg-color);
@@ -1001,6 +917,12 @@ header .slider .fa-moon {
 .projects .container .box img,
 .certificates .container .box img {
   width: 100%;
+  filter: grayscale(1);
+  transition: filter ease 1s;
+}
+.projects .container .box:hover img,
+.certificates .container .box:hover img{
+  filter: grayscale(0);
 }
 .projects .container .box a,
 .certificates .container .box a {
@@ -1075,39 +997,8 @@ header .slider .fa-moon {
 .certificates {
   position: relative;
 }
-.certificates .container .box a {
-  height: 100%;
-  width: 100%;
-}
 .certificates .container .box img {
-  padding: 20px;
   height: 100%;
-  width: 100%;
-}
-.certificates .container .box{
-  overflow: visible;
-}
-.projects .container .box:first-child::after,
-.certificates .container .box:first-child::after{
-  content: "Newest";
-  position: absolute;
-  top: 31px;
-  right: 0px;
-  background-color: #FFF176;
-  padding: 5px 40px 5px 25px;
-  transform: rotate(90deg);
-  border-radius: 8px 0 0 8px;
-}
-.projects .container .box:first-child::before,
-.certificates .container .box:first-child::before{
-  content: "";
-  position: absolute;
-  top: 60px;
-  right: 44.1px;
-  z-index: 1000;
-  border: 15px solid;
-  border-bottom: 30px solid;
-  border-color: transparent transparent white transparent;
 }
 /* end certificates */
 /* #endregion */
@@ -1295,7 +1186,6 @@ footer .container p {
 /* #endregion */
 
 /* start animation */
-
 @keyframes projects-button {
   0% {
     background-position: 0% 50%;
@@ -1310,5 +1200,4 @@ footer .container p {
     box-shadow: 0 0 20px var(--orange-color);
   }
 }
-
 /* end animation */

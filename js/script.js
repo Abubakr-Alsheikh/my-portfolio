@@ -19,12 +19,11 @@ function toggleDarkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
   if(element.classList.contains("dark-mode")){
-    document.querySelector(".home .container .image img").setAttribute("src","https://drive.google.com/uc?id=1fnaay_D6P3bjilBwyAHjR3WngZT4SzF5");
+    document.querySelector(".home .container .image img").setAttribute("src","https://drive.google.com/uc?id=1a4sydYUxBZ37RwqxWf2_dcvmt14-TYDX");
   }else{
-    document.querySelector(".home .container .image img").setAttribute("src","https://drive.google.com/uc?id=1G7LI0Sdal0kZJ4dTQWYVPs-XTlv1e7dd");
+    document.querySelector(".home .container .image img").setAttribute("src","https://drive.google.com/uc?id=1ysY1Yx_H5ExMaUJ1OM-I-89LJNFlpgdd");
   }
 }
-
 // Scroll script
 const links = document.querySelectorAll('ul li a');
 function removeActiveClass() {

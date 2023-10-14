@@ -4,7 +4,7 @@
         "title":"lona Template",
         "image-project":"https://drive.google.com/uc?id=17RqZuWj6-Jx1b6ldsl2HiLF2BtXBgNWl",
         "image-laptop":"https://drive.google.com/uc?id=1Cb0nOKk0lMaVut6vEqpoJt-pDGdgNu4M", 
-        "url":"#",
+        "url":"https://abubakr-alsheikh.github.io/leon-website/",
         "type":"front end"
     },
     {
@@ -12,7 +12,7 @@
         "title":"kasper Template",
         "image-project":"https://drive.google.com/uc?id=1G1ps658tNIQE4Vm1C_SQKJ0sWSydu4C9",
         "image-laptop":"https://drive.google.com/uc?id=18M5PFK2QnzNWgcjoUjkVMpy2gX0yq3h7",
-        "url":"#",
+        "url":"https://abubakr-alsheikh.github.io/kasper-website/",
         "type":"front end"
     },
     {
@@ -20,15 +20,15 @@
         "title":"Elzero Template",
         "image-project":"https://drive.google.com/uc?id=1ns8O0dXS1OfJzTCOl6r7Y4zrMl9xqv2y",
         "image-laptop":"https://drive.google.com/uc?id=13udHIu5RgtEOiLTvlXTqOjAfpi88OjAM",
-        "url":"#",
+        "url":"https://abubakr-alsheikh.github.io/elzero-template-website",
         "type":"front end"
     },
     {
         "id":4,
-        "title":"Movie Site",
+        "title":"Movie website",
         "image-project":"https://drive.google.com/uc?id=13RkhI5xcSnw64vnWVcqeT52lGGd8teqP",
         "image-laptop":"https://drive.google.com/uc?id=1AYkb6SZRW5SZ_4i4eEdozjLSsSensF9Y",
-        "url":"#",
+        "url":"https://abubakr-alsheikh.github.io/movie-website/",
         "type":"front end"
     },
     {
@@ -36,7 +36,15 @@
         "title":"sama media",
         "image-project":"https://drive.google.com/uc?id=1yCtxclIgyLuqgm_7ngr-FB9iMc-8q5X5",
         "image-laptop":"https://drive.google.com/uc?id=1OuGUPZl80B9xH2c2-yeQ-_DQllCpc6SG",
-        "url":"#",
+        "url":"https://samamedia.000webhostapp.com/",
         "type":"back end"
+    },
+    {
+        "id":6,
+        "title":"Dashboard website",
+        "image-project":"https://drive.google.com/uc?id=16wF2tnD4JwSwMT7WU0H2HIJjOUD1AP6h",
+        "image-laptop":"https://drive.google.com/uc?id=1Unv0buouThBeNlpNzkGymx9FL0sforEI",
+        "url":"https://abubakr-alsheikh.github.io/dashboard-website",
+        "type":"front end"
     }
 ]
