@@ -1,0 +1,24 @@
+[
+  
+  {
+    "id": 1,
+    "title": "computer technical institute",
+    "place": "Syria / Aleppo",
+    "date": "2021",
+    "degree": ""
+  },
+  {
+    "id": 2,
+    "title": "information technology engineer",
+    "place": "Syrian Virtual University",
+    "date": "2021",
+    "degree": ""
+  },
+  {
+    "id": 3,
+    "title": "computer technical institute",
+    "place": "Syria / Aleppo",
+    "date": "2023",
+    "degree": "90.36%"
+  }
+]

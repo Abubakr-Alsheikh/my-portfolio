@@ -1,0 +1,74 @@
+{
+  "Front End": [
+    {
+      "skill": "HTML",
+      "prograss": "95%"
+    },
+    {
+      "skill": "CSS",
+      "prograss": "90%"
+    },
+    {
+      "skill": "JS",
+      "prograss": "90%"
+    }
+  ],
+  "Back End": [
+    {
+      "skill": "PHP",
+      "prograss": "75%"
+    },
+    {
+      "skill": "node.js",
+      "prograss": "30%"
+    }
+  ],
+  "Data Bases": [
+    {
+      "skill": "MySQL",
+      "prograss": "70%"
+    },
+    {
+      "skill": "SQL Server",
+      "prograss": "65%"
+    }
+  ],
+  "Design": [
+    {
+      "skill": "Figma",
+      "prograss": "80%"
+    },
+    {
+      "skill": "Photoshop",
+      "prograss": "70%"
+    }
+  ],
+  "Programming languages": [
+    {
+      "skill": "C#",
+      "prograss": "80%"
+    },
+    {
+      "skill": "Python",
+      "prograss": "70%"
+    }
+  ],
+  "Other": [
+    {
+      "skill": "Microsoft Office",
+      "prograss": "80%"
+    },
+    {
+      "skill": "Unity",
+      "prograss": "60%"
+    },
+    {
+      "skill": "Blender",
+      "prograss": "40%"
+    },
+    {
+      "skill": "FL Studio",
+      "prograss": "30%"
+    }
+  ]
+}

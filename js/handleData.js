@@ -1,9 +1,10 @@
 import projects from "../data/projects.json" assert { type: "json" };
 import certificates from "../data/certificates.json" assert { type: "json" };
+import education from "../data/eductaion.json" assert { type: "json" };
+import skills from "../data/skills.json" assert { type: "json" };
 // import { Translator } from "./translate.js";
 
 window.addEventListener("DOMContentLoaded", function () {
-  console.log("object");
   showProjects(projects.reverse());
   showProjectBtns();
 
@@ -14,6 +15,8 @@ window.addEventListener("DOMContentLoaded", function () {
     })
   );
   showCertificateBtns();
+  loadEducation();
+  loadSkills();
 });
 
 // Projects
@@ -71,8 +74,7 @@ function showCertificates(certificateData) {
         data-lightbox="certificates" 
         data-title="If you want to see the certificate <a href='${certificate.url}' target='_blank'>Click Here</a>"
         >
-          <img src="${certificate.image}" alt="${certificate.title}" srcset=""
-          width="320px" height="260px"/>
+          <img src="${certificate.image}" alt="${certificate.title}"/>
         </a>
         <p>${certificate.title}</p>
       </div>`;
@@ -105,10 +107,88 @@ function showCertificateBtns() {
     .join("");
 }
 
+// Education
+function loadEducation() {
+  let html = education
+    .map((item) => {
+      return `
+          <div class="educat">
+              ${
+                item.degree
+                  ? '<i class="fas fa-graduation-cap fa-2x"></i>'
+                  : '<i class="fas fa-book-open fa-2x"></i>'
+              }
+              <h4 class="title">${item.title}</h4>
+              <span class="place">${item.place}</span>
+              <span class="date"> - ${item.date}</span>
+              <span class="degree" style="display:${
+                item.degree ? "inline" : "none"
+              }"> - ${item.degree}</span>
+          </div>
+      `;
+    })
+    .reverse()
+    .join("");
+
+  document.querySelector(".timeline").innerHTML = html;
+}
+
 // Global function
 function addClassActive(e) {
   e.currentTarget.querySelectorAll("button").forEach((element) => {
     element.classList.remove("active");
   });
   e.target.classList.add("active");
+}
+
+function loadSkills() {
+  let skillsContainer = document.querySelector(".skills-container");
+
+  // Clear the container
+  skillsContainer.innerHTML = "";
+
+  // Generate categories and skills
+  Object.keys(skills).forEach((categoryTitle) => {
+    let categoryHTML = `
+      <div class="category">
+        <div class="title">
+          <h4>${categoryTitle}</h4>
+          <i class="fa fa-arrow-down"></i>
+        </div>
+        <div class="menu">
+          ${skills[categoryTitle]
+            .map(
+              (item) => `
+            <div class="skill">
+              <h5>${item.skill}</h5>
+              <div class="porgrass-container">
+                <span class="prograss" style="width: ${item.prograss};"></span>
+              </div>
+            </div>
+          `
+            )
+            .join("")}
+        </div>
+      </div>
+    `;
+
+    // Append the category to the container
+    skillsContainer.innerHTML += categoryHTML;
+  });
+
+  // Add event listeners for the titles
+  let categories = document.querySelectorAll(".skills-container .category");
+  categories.forEach((category) => {
+    category.querySelector(".title").addEventListener("click", function () {
+      let activeCategory = document.querySelector(
+        ".skills-container .category.active"
+      );
+
+      if (activeCategory && activeCategory !== category) {
+        activeCategory.classList.remove("active");
+      }
+
+      category.classList.toggle("active");
+    });
+  });
 }

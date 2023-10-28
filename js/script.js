@@ -43,3 +43,23 @@ function setActiveLink() {
 }
 window.addEventListener('scroll', setActiveLink, { passive: true });
 
+// JavaScript
+document.addEventListener('DOMContentLoaded', (event) => {
+  const buttons = document.querySelectorAll('.tab-button');
+  const tabs = document.querySelectorAll('.tabs > div');
+
+  buttons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      buttons.forEach((btn) => btn.classList.remove('active'));
+      tabs.forEach((tab) => tab.classList.remove('active'));
+
+      button.classList.add('active');
+      tabs[index].classList.add('active');
+    });
+  });
+
+  // Automatically click the first button to show the first tab
+  buttons[0].click();
+});
+
+
