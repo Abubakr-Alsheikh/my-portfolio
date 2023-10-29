@@ -926,15 +926,19 @@ header .language ul li:first-child {
   position: relative;
   display: block;
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid var(--darkPinkRed-color);
   height: 23px;
+  border-radius: var(--b-r);
+  overflow: hidden;
 }
 .skills-container .category .menu .skill .prograss {
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
-  background-color: #4CAF50;
+  height: 21px;
+  background: linear-gradient(45deg,#284181DD,#ff531dDD);
+  /* background-color: var(--darkPinkRed-color); */
+  border-radius: var(--b-r);
 }
 
 
@@ -1050,6 +1054,93 @@ header .language ul li:first-child {
     margin: 10px 0;
   }
 }
+.platforms{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.platforms h1 {
+  position: relative;
+  font-size: 2rem;
+  margin-bottom: 42px;
+  margin-left: 128px;
+  width: 100%;
+  color: var(--darkPinkRed-color);
+}
+.platforms h1::before {    
+  content: "";
+  position: absolute;
+  left: -9px;
+  bottom: -14px;
+  width: 240px;
+  height: 6px;
+  background: var(--darkPinkRed-color);
+  border-radius: 8px;
+}
+.platforms .platforms-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  gap: 16px;
+  width: 100%;
+}
+
+.platforms .platform {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 350px;
+  height: 350px;
+  border-radius: var(--b-r);
+  overflow: hidden;
+  box-shadow: 0 5px 10px var(--text-color);
+  margin-bottom: 32px;
+  text-transform: capitalize;
+  margin: 30px;
+}
+.platforms .platform img{
+  width: 100%;
+}
+
+.platforms .info {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.platforms .info h3{
+  padding: 16px 32px;
+  flex-grow: 1;
+  font-size: 1.3rem;
+}
+.platforms .info a{
+  display: flex;
+  width: 40%;
+  height: 54px;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  text-decoration: underline;
+  transition: var(--transition-time);
+}
+.platforms .info a:hover{
+  color: var(--bg-theme-color);
+  background-color: var(--text-color);
+}
+@media (max-width:991px) {
+  .platforms.container{
+    flex-direction: column;
+  }
+  .platforms h1 {
+    margin-left: 32px;
+
+  }
+}
+
+
 /* end services */
 /* #endregion */
 
