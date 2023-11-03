@@ -920,6 +920,10 @@ header .language ul li:first-child {
 }
 .skills-container .category.active .menu {
   display: block;
+  padding: 16px;
+  background: var(--bg-color);
+  border-radius: 16px;
+  margin-top: 16px;
 }
 
 .skills-container .category .menu .skill .porgrass-container {
@@ -1083,6 +1087,7 @@ header .language ul li:first-child {
   grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
   gap: 16px;
   width: 100%;
+  justify-items: center;
 }
 
 .platforms .platform {
@@ -1094,9 +1099,15 @@ header .language ul li:first-child {
   border-radius: var(--b-r);
   overflow: hidden;
   box-shadow: 0 5px 10px var(--text-color);
-  margin-bottom: 32px;
   text-transform: capitalize;
-  margin: 30px;
+  margin: 32px;
+}
+@media (max-width:480px) {
+.platforms .platform {
+  width: 300px;
+  height: 300px;
+  margin: 16px;
+}
 }
 .platforms .platform img{
   width: 100%;
@@ -1257,6 +1268,11 @@ header .language ul li:first-child {
 }
 .certificates .container .box img {
   height: 100%;
+}
+@media (max-width:991px) {
+  .certificates .container .box{
+    height: 250px;
+  }
 }
 /* end certificates */
 /* #endregion */

@@ -11,12 +11,25 @@
     {
       "skill": "JS",
       "prograss": "90%"
+    },
+    {
+      "skill": "Bootstrap",
+      "prograss": "60%"
+    },
+    {
+      "skill": "React",
+      "prograss": "70%"
+    }
+    ,
+    {
+      "skill": "Vue",
+      "prograss": "40%"
     }
   ],
   "Back End": [
     {
       "skill": "PHP",
-      "prograss": "75%"
+      "prograss": "80%"
     },
     {
       "skill": "node.js",
@@ -30,7 +43,11 @@
     },
     {
       "skill": "SQL Server",
-      "prograss": "65%"
+      "prograss": "75%"
+    },
+    {
+      "skill": "SQLite",
+      "prograss": "50%"
     }
   ],
   "Design": [
@@ -55,20 +72,16 @@
   ],
   "Other": [
     {
+      "skill": "AI Tools",
+      "prograss": "70%"
+    },
+    {
       "skill": "Microsoft Office",
       "prograss": "80%"
     },
     {
       "skill": "Unity",
       "prograss": "60%"
-    },
-    {
-      "skill": "Blender",
-      "prograss": "40%"
-    },
-    {
-      "skill": "FL Studio",
-      "prograss": "30%"
     }
   ]
 }
