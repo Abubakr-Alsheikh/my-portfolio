@@ -534,8 +534,14 @@
 
     <!-- <script src="js/lightbox-plus-jquery.min.js"></script>
     <script src="js/lightbox.min.js"></script> -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script>
+      lightbox.option({
+        'alwaysShowNavOnTouchDevices':true
+      })
+    </script>
     <script src="js/script.js"></script>
     <script>
       let form = document.getElementById("my-form");
@@ -588,5 +594,6 @@
     </script>
     <script type="module" src="js/handleData.js"></script>
     <script type="module" src="js/translate.js"></script>
+    
   </body>
 </html>

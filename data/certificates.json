@@ -120,14 +120,14 @@
     },
     {
         "id":18,
-        "title":"Technical diploma certificate",
+        "title":"Technical diploma",
         "image":"images/Certificates/Technical diploma certificate.jpg",
         "url":"",
         "type":"specialization"
     },
     {
         "id":24,
-        "title":"EF SET Certificate",
+        "title":"EF Standard English Test",
         "image":"images/Certificates/EF SET Certificate.jpeg",
         "url":"https://efset.org/cert/T7x6T7",
         "type":"specialization"

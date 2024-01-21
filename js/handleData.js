@@ -117,15 +117,15 @@ function loadEducation() {
           <div class="educat">
               ${
                 item.degree
-                  ? '<i class="fas fa-graduation-cap fa-2x"></i>'
-                  : '<i class="fas fa-book-open fa-2x"></i>'
+                  ? '<i class="fas fa-graduation-cap"></i>'
+                  : '<i class="fas fa-book-open"></i>'
               }
               <h4 class="title">${item.title}</h4>
-              <span class="place">${item.place}</span>
-              <span class="date"> - ${item.date}</span>
+              <span class="place">${item.place}</span><br>
+              <span class="date">${item.date}</span>
               <span class="degree" style="display:${
                 item.degree ? "inline" : "none"
-              }"> - ${item.degree}</span>
+              }"> | ${item.degree}</span>
           </div>
       `;
     })
