@@ -2,120 +2,169 @@
     {
         "id":1,
         "title":"html",
-        "image":"https://drive.google.com/uc?id=1R3Ejfo6ZoowmbkFQ8jnNxbXAaQ8Wdc4A",
+        "image":"/images/Certificates/Web design for everybody/HTML.jpeg",
         "url":"https://coursera.org/verify/8S9XQWSE88KB",
         "type":"course"
     },
     {
         "id":2,
         "title":"css",
-        "image":"https://drive.google.com/uc?id=1Kq5VnntnEM_S51B98rJoMZB1wooZk2Zk",
+        "image":"/images/Certificates/Web design for everybody/CSS.jpeg",
         "url":"https://coursera.org/verify/4HSBD74W3G4Z",
         "type":"course"
     },
     {
         "id":3,
         "title":"advanced css",
-        "image":"https://drive.google.com/uc?id=1xAxJLNCNuSSQ4c7Teu4d5_eqegZdxcGC",
+        "image":"/images/Certificates/Web design for everybody/Advanced CSS.jpeg",
         "url":"https://coursera.org/verify/A9KWRLGVX4TU",
         "type":"course"
     },
     {
         "id":4,
         "title":"JavaScript",
-        "image":"https://drive.google.com/uc?id=1gZv2uxi9EwFNzA7zF-bJVWT35cMBEI5D",
+        "image":"/images/Certificates/Web design for everybody/JavaScript.jpeg",
         "url":"https://coursera.org/verify/UFXA6LEWMAKK",
         "type":"course"
     },
     {
         "id":5,
         "title":"Web Design for Everybody Capstone",
-        "image":"https://drive.google.com/uc?id=1EPP17s8uHyu6pH-K63qQsBej1IHGcLuh",
+        "image":"/images/Certificates/Web design for everybody/Web Design for Everybody Capstone.jpg",
         "url":"https://coursera.org/verify/N9FUPRBZNUHW",
         "type":"course"
     },
     {
         "id":6,
         "title":"Webdesign for everybody",
-        "image":"https://drive.google.com/uc?id=1u0zTI06WLUegGZ9IIUTblb8jKNzCzy4u",
+        "image":"/images/Certificates/Web design for everybody/Webdesign for everybody.jpeg",
         "url":"https://coursera.org/verify/specialization/UERU9T5YRQWS",
         "type":"specialization"
     },
     {
         "id":7,
         "title":"Building Web Applications in PHP",
-        "image":"https://drive.google.com/uc?id=1rBvSI9AO9RtZtSF5cGiMkhg0pQF1iMkx",
+        "image":"/images/Certificates/Web Applications for Everybody/Building Web Applications in PHP.jpg",
         "url":"https://coursera.org/verify/9MW68H78WDKS",
         "type":"course"
     },
     {
         "id":8,
         "title":"Structured Query Language",
-        "image":"https://drive.google.com/uc?id=16_lzcyoxaMI2jU3AfMI74lRy6gp5yGGY",
+        "image":"/images/Certificates/Web Applications for Everybody/Introduction to Structured Query Language.jpg",
         "url":"https://coursera.org/verify/BNBWX3J4S8V4",
         "type":"course"
     },
     {
         "id":9,
         "title":"Building Database Applications",
-        "image":"https://drive.google.com/uc?id=1sSyqTUsXSgbw5HwbvmbxUPBbEPiQ9K3A",
+        "image":"/images/Certificates/Web Applications for Everybody/Building Database Applications in PHP.jpeg",
         "url":"https://coursera.org/verify/F84744HRCDRL",
         "type":"course"
     },
     {
         "id":10,
         "title":"JavaScript, jQuery, and JSON",
-        "image":"https://drive.google.com/uc?id=1ve8MqhSwqUj2E5BebxRMA6vstG_JXTcP",
+        "image":"/images/Certificates/Web Applications for Everybody/JavaScript, jQuery, and JSON.jpg",
         "url":"https://coursera.org/verify/SCNXSMBPQAFR",
         "type":"course"
     },
     {
         "id":11,
         "title":"Web Applications for Everybody",
-        "image":"https://drive.google.com/uc?id=1h1Jh86p7TNFR7tA6BDISspybVT2ibNyY",
+        "image":"/images/Certificates/Web Applications for Everybody/Web Applications for Everybody.jpg",
         "url":"https://coursera.org/verify/specialization/F7RBLWC5AGB3",
         "type":"specialization"
     },
     {
         "id":12,
         "title":"Getting Started with Python",
-        "image":"https://drive.google.com/uc?id=1p8zH9ZirjS5elPuApden6_lhWAYm63PX",
+        "image":"/images/Certificates/Python for Everybody/Programming for Everybody.jpg",
         "url":"https://coursera.org/verify/RH57HCNB8FP7",
         "type":"course"
     },
     {
         "id":13,
         "title":"Python Data Structures",
-        "image":"https://drive.google.com/uc?id=1nUeEUeJFtlyxsf8JOomNlp-Ov-JyTILh",
+        "image":"/images/Certificates/Python for Everybody/Python Data Structures.png",
         "url":"https://coursera.org/verify/2RUMELQB6PBZ",
         "type":"course"
     },
     {
         "id":14,
         "title":"Using Python to Access Web Data",
-        "image":"https://drive.google.com/uc?id=1FH6KUH9W1gHkB-8lQ2hiDJE3Po4ko_YA",
+        "image":"/images/Certificates/Python for Everybody/Using Python to Access Web Data.png",
         "url":"https://coursera.org/verify/N2657JBVMH8A",
         "type":"course"
     },
     {
         "id":15,
         "title":"Using Databases with Python",
-        "image":"https://drive.google.com/uc?id=1YFsBJzCdftz0coV_fGYbm4GDMn2xTo8E",
+        "image":"/images/Certificates/Python for Everybody/Using Databases with Python.png",
         "url":"https://coursera.org/verify/SAR286WGSPVY",
         "type":"course"
     },
     {
         "id":16,
         "title":"Capstone: R.P.V Data with Python",
-        "image":"https://drive.google.com/uc?id=1uJEXKfoPC7r6xK_UM8GMsyNfYx4BDF0R",
+        "image":"/images/Certificates/Python for Everybody/Capstone Retrieving, Processing, and Visualizing.png",
         "url":"https://coursera.org/verify/VBQTN7HY99VE",
         "type":"course"
     },
     {
         "id":17,
         "title":"Python for Everybody",
-        "image":"https://drive.google.com/uc?id=1nbRzJac-f-tYg834Pe1bpCp9FFFV613Z",
+        "image":"/images/Certificates/Python for Everybody/Python for Everybody.png",
         "url":"https://coursera.org/verify/specialization/QTNT2MHPT8M7",
+        "type":"specialization"
+    },
+    {
+        "id":18,
+        "title":"Technical diploma certificate",
+        "image":"/images/Certificates/Technical diploma certificate.jpg",
+        "url":"",
+        "type":"specialization"
+    },
+    {
+        "id":24,
+        "title":"EF SET Certificate",
+        "image":"/images/Certificates/EF SET Certificate.jpeg",
+        "url":"https://efset.org/cert/T7x6T7",
+        "type":"specialization"
+    },
+    {
+        "id":19,
+        "title":"Web Application Technologies and Django",
+        "image":"/images/Certificates/Django for Everybody/Web Application Technologies and Django.jpeg",
+        "url":"https://coursera.org/verify/NMRHG7J6BHTY",
+        "type":"course"
+    },
+    {
+        "id":20,
+        "title":"Building Web Applications in Django",
+        "image":"/images/Certificates/Django for Everybody/Building Web Applications in Django.jpeg",
+        "url":"https://coursera.org/verify/6EHD4UUNY9XS",
+        "type":"course"
+    },
+    {
+        "id":21,
+        "title":"Django Features and Libraries",
+        "image":"/images/Certificates/Django for Everybody/Django Features and Libraries.jpeg",
+        "url":"https://coursera.org/verify/RJDJF6NDG9A6",
+        "type":"course"
+    },
+    {
+        "id":22,
+        "title":"Using JavaScript and JSON in Django",
+        "image":"/images/Certificates/Django for Everybody/Using JavaScript and JSON in Django.jpeg",
+        "url":"https://coursera.org/verify/2X26USBKJN6G",
+        "type":"course"
+    },
+    {
+        "id":23,
+        "title":"Django for Everybody",
+        "image":"/images/Certificates/Django for Everybody/Django for Everybody.jpeg",
+        "url":"https://coursera.org/verify/specialization/DC49ZLKAM5TQ",
         "type":"specialization"
     }
 ]

@@ -19,9 +19,9 @@ function toggleDarkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
   if(element.classList.contains("dark-mode")){
-    document.querySelector(".home .container .image img").setAttribute("src","https://drive.google.com/uc?id=1a4sydYUxBZ37RwqxWf2_dcvmt14-TYDX");
+    document.querySelector(".home .container .image img").setAttribute("src","images/AbubakrAlsheikhDark.jpeg");
   }else{
-    document.querySelector(".home .container .image img").setAttribute("src","https://drive.google.com/uc?id=1ysY1Yx_H5ExMaUJ1OM-I-89LJNFlpgdd");
+    document.querySelector(".home .container .image img").setAttribute("src","images/AbubakrAlsheikh.jpeg");
   }
 }
 // Scroll script

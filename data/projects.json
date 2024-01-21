@@ -2,48 +2,48 @@
     {
         "id":1,
         "title":"lona Template",
-        "image-project":"https://drive.google.com/uc?id=17RqZuWj6-Jx1b6ldsl2HiLF2BtXBgNWl",
-        "image-laptop":"https://drive.google.com/uc?id=1Cb0nOKk0lMaVut6vEqpoJt-pDGdgNu4M", 
+        "image-project":"/images/Projects/Projects Pictures/lona.jpg",
+        "image-laptop":"/images/Projects/Lona Preview.jpg", 
         "url":"https://abubakr-alsheikh.github.io/leon-website/",
         "type":"front end"
     },
     {
         "id":2,
         "title":"kasper Template",
-        "image-project":"https://drive.google.com/uc?id=1G1ps658tNIQE4Vm1C_SQKJ0sWSydu4C9",
-        "image-laptop":"https://drive.google.com/uc?id=18M5PFK2QnzNWgcjoUjkVMpy2gX0yq3h7",
+        "image-project":"/images/Projects/Projects Pictures/kasperTemp.jpg",
+        "image-laptop":"/images/Projects/kasper Preview.jpg",
         "url":"https://abubakr-alsheikh.github.io/kasper-website/",
         "type":"front end"
     },
     {
         "id":3,
         "title":"Elzero Template",
-        "image-project":"https://drive.google.com/uc?id=1ns8O0dXS1OfJzTCOl6r7Y4zrMl9xqv2y",
-        "image-laptop":"https://drive.google.com/uc?id=13udHIu5RgtEOiLTvlXTqOjAfpi88OjAM",
+        "image-project":"/images/Projects/Projects Pictures/ElzeroTemp.jpg",
+        "image-laptop":"/images/Projects/Elzero Preview.jpg",
         "url":"https://abubakr-alsheikh.github.io/elzero-template-website",
         "type":"front end"
     },
     {
         "id":4,
         "title":"Movie website",
-        "image-project":"https://drive.google.com/uc?id=13RkhI5xcSnw64vnWVcqeT52lGGd8teqP",
-        "image-laptop":"https://drive.google.com/uc?id=1AYkb6SZRW5SZ_4i4eEdozjLSsSensF9Y",
+        "image-project":"/images/Projects/Projects Pictures/MovieSite.jpg",
+        "image-laptop":"/images/Projects/MovieSite Preview.jpg",
         "url":"https://abubakr-alsheikh.github.io/movie-website/",
         "type":"front end"
     },
     {
         "id":5,
         "title":"sama media",
-        "image-project":"https://drive.google.com/uc?id=1yCtxclIgyLuqgm_7ngr-FB9iMc-8q5X5",
-        "image-laptop":"https://drive.google.com/uc?id=1OuGUPZl80B9xH2c2-yeQ-_DQllCpc6SG",
+        "image-project":"/images/Projects/Projects Pictures/samaMedia.jpg",
+        "image-laptop":"/images/Projects/SamaMedia Preview.jpg",
         "url":"https://samamedia.000webhostapp.com/",
         "type":"back end"
     },
     {
         "id":6,
         "title":"Dashboard website",
-        "image-project":"https://drive.google.com/uc?id=16wF2tnD4JwSwMT7WU0H2HIJjOUD1AP6h",
-        "image-laptop":"https://drive.google.com/uc?id=1Unv0buouThBeNlpNzkGymx9FL0sforEI",
+        "image-project":"/images/Projects/Projects Pictures/ElzeroDashboard.png",
+        "image-laptop":"/images/Projects/ElzeroDashboard Preview.jpg",
         "url":"https://abubakr-alsheikh.github.io/dashboard-website",
         "type":"front end"
     }
