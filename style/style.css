@@ -1447,10 +1447,13 @@ footer .container {
   position: relative;
   height: 60px;
   border-radius: var(--b-r);
-  background: var(--gradient-color);
   bottom: -20px;
   left: -0.5%;
   width: 101%;
+  background: linear-gradient(270deg, var(--blue-color), var(--orange-color));
+  background-size: 400% 400%;
+  box-shadow: 0 0 10px var(--blue-color);
+  animation: projects-button 5s infinite alternate;
 }
 footer .container p {
   font-size: 1.3rem;

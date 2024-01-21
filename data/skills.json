@@ -9,18 +9,17 @@
       "prograss": "90%"
     },
     {
-      "skill": "JS",
+      "skill": "JavaScript",
       "prograss": "90%"
     },
     {
       "skill": "Bootstrap",
-      "prograss": "60%"
+      "prograss": "80%"
     },
     {
       "skill": "React",
       "prograss": "70%"
-    }
-    ,
+    },
     {
       "skill": "Vue",
       "prograss": "40%"
@@ -32,7 +31,15 @@
       "prograss": "80%"
     },
     {
-      "skill": "node.js",
+      "skill": "Django",
+      "prograss": "70%"
+    },
+    {
+      "skill": "Asp.net",
+      "prograss": "65%"
+    },
+    {
+      "skill": "Node.js",
       "prograss": "30%"
     }
   ],
@@ -50,7 +57,7 @@
       "prograss": "50%"
     }
   ],
-  "Design": [
+  "Design tools": [
     {
       "skill": "Figma",
       "prograss": "80%"
