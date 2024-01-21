@@ -201,10 +201,10 @@ function loadPlatforms(){
   let platform = platforms.map(platform => {
     return `
       <div class="platform">
-        <img src="${platform.img}" alt="">
+        <img src="${platform.img}" alt="platform.title">
         <div class="info">
           <h3 class="title">${platform.title}</h3>
-          <a href="${platform['url-profile']}" target="_blank" >Visit Profile</a>
+          <a href="${platform['url-profile']}" target="_blank" >View Profile</a>
         </div>
       </div>
     `;
