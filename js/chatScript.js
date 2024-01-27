@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     $(".chat-history").scrollTop($(".chat-history")[0].scrollHeight);
 
     // Play a sound
-    var audio = new Audio("/images/messageNotification.mp3");
+    var audio = new Audio("messageNotification.mp3");
     audio.volume = 0.1;
     audio.play();
   }
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
       })
       .catch((error) => {
-        addMessage("I am sorry, something bad happend. try to use vpn, maybe it will fix the problem. if not try to contact me to fix the problem.", "Abubakr Alsheikh", "AbubakrAlsheikh.jpeg");
+        addMessage("I am sorry, something bad happend, try again. Or try to use vpn, maybe it will fix the problem. if not try to contact me to fix the problem.", "Abubakr Alsheikh", "AbubakrAlsheikh.jpeg");
         console.error("Error:", error);
       })
       .finally(() => {
