@@ -1,15 +1,15 @@
 const header = document.querySelector("header");
 window.addEventListener("scroll", () => {
-    header.classList.toggle("scroll", window.scrollY > 50);
+  header.classList.toggle("scroll", window.scrollY > 50);
 });
 
 //To show elements in nice way
-const observer = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add("show");
-        }
-    });
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
 });
 const hidenElements = document.querySelectorAll(".hidden");
 hidenElements.forEach((element) => observer.observe(element));
@@ -18,48 +18,53 @@ hidenElements.forEach((element) => observer.observe(element));
 function toggleDarkMode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
-  if(element.classList.contains("dark-mode")){
-    document.querySelector(".home .container .image img").setAttribute("src","images/AbubakrAlsheikhDark.jpeg");
-  }else{
-    document.querySelector(".home .container .image img").setAttribute("src","images/AbubakrAlsheikh.jpeg");
+  if (element.classList.contains("dark-mode")) {
+    document
+      .querySelector(".home .container .image img")
+      .setAttribute("src", "images/AbubakrAlsheikhDark.jpeg");
+  } else {
+    document
+      .querySelector(".home .container .image img")
+      .setAttribute("src", "images/AbubakrAlsheikh.jpeg");
   }
 }
 // Scroll script
-const links = document.querySelectorAll('ul li a');
+const links = document.querySelectorAll("ul li a");
 function removeActiveClass() {
-  links.forEach(link => {
-    link.classList.remove('active');
+  links.forEach((link) => {
+    link.classList.remove("active");
   });
 }
 function setActiveLink() {
   const scrollPos = window.screenY || document.documentElement.scrollTop + 200;
-  links.forEach(link => {
-    const target = document.querySelector(link.getAttribute('href'));
-    if (target.offsetTop <= scrollPos && target.offsetTop + target.offsetHeight > scrollPos) {
+  links.forEach((link) => {
+    const target = document.querySelector(link.getAttribute("href"));
+    if (
+      target.offsetTop <= scrollPos &&
+      target.offsetTop + target.offsetHeight > scrollPos
+    ) {
       removeActiveClass();
-      link.classList.add('active');
+      link.classList.add("active");
     }
   });
 }
-window.addEventListener('scroll', setActiveLink, { passive: true });
+window.addEventListener("scroll", setActiveLink, { passive: true });
 
 // JavaScript
-document.addEventListener('DOMContentLoaded', (event) => {
-  const buttons = document.querySelectorAll('.tab-button');
-  const tabs = document.querySelectorAll('.tabs > div');
+document.addEventListener("DOMContentLoaded", (event) => {
+  const buttons = document.querySelectorAll(".tab-button");
+  const tabs = document.querySelectorAll(".tabs > div");
 
   buttons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      buttons.forEach((btn) => btn.classList.remove('active'));
-      tabs.forEach((tab) => tab.classList.remove('active'));
+    button.addEventListener("click", () => {
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      tabs.forEach((tab) => tab.classList.remove("active"));
 
-      button.classList.add('active');
-      tabs[index].classList.add('active');
+      button.classList.add("active");
+      tabs[index].classList.add("active");
     });
   });
 
   // Automatically click the first button to show the first tab
   buttons[0].click();
 });
-
-

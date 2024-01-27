@@ -57,9 +57,9 @@ ul {
 a {
   text-decoration: none;
 }
-img {
+/* img {
   width: 32px;
-}
+} */
 .container {
   padding-left: 20px;
   padding-right: 20px;
@@ -1463,6 +1463,142 @@ footer .container p {
   padding-top: 10px;
 }
 /* end footer */
+/* #endregion */
+
+/* #region Live chat */
+
+#live-chat {
+	bottom: 40px;
+	font-size: 12px;
+	right: 24px;
+	position: fixed;
+	width: 300px;
+  border: 1px solid var(--text-color);
+  border-radius: 16px;
+}
+
+#live-chat #header-chat {
+	background: var(--text-color);
+	border-radius: 16px 16px 0 0;
+	color: var(--bg-color);
+	cursor: pointer;
+	padding: 16px 24px;
+}
+
+#live-chat h4:before {
+	background: var(--orange-color);
+	border-radius: 50%;
+	content: "";
+	display: inline-block;
+	height: 8px;
+	margin: 0 8px 0 0;
+	width: 8px;
+}
+
+#live-chat h4 {
+	font-size: 12px;
+}
+
+#live-chat h5 {
+	font-size: 10px;
+}
+
+#live-chat form {
+	padding: 16px;
+  border-top: 1px solid var(--text-color);
+}
+
+#live-chat input[type="text"] {
+	border: none;
+	padding: 8px;
+	outline: none;
+  flex-grow: 1;
+}
+
+.chat-message-counter {
+	background: var(--blue-color);
+	border: 1px solid var(--bg-color);
+  color: white;
+	border-radius: 50%;
+	display: none;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	left: 0;
+	line-height: 28px;
+	margin: -15px 0 0 -15px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 28px;
+}
+
+/* .chat-close {
+	background: #1b2126;
+	border-radius: 50%;
+	color: #fff;
+	display: block;
+	float: right;
+	font-size: 10px;
+	height: 16px;
+	line-height: 16px;
+	margin: 2px 0 0 0;
+	text-align: center;
+	width: 16px;
+} */
+
+.chat {
+	background: var(--bg-color);
+  color: var(--text-color);
+  border-radius: 0 0 16px 16px;
+}
+.chat fieldset{
+  display: flex;
+  border-radius: 32px;
+  overflow: hidden;
+  border: 1px solid var(--text-color);
+}
+.chat fieldset button{
+  width: 48px;
+  border-radius: 0px 16px 16px 0px;
+  background: var(--text-color);
+  color: var(--bg-color);
+  font-size: 24px;
+  border: none;
+  outline: none;
+}
+
+.chat-history {
+	height: 252px;
+	padding: 8px 24px;
+	overflow-y: scroll;
+  border-radius: 16px;
+}
+
+.chat-message {
+	margin: 16px 0;
+}
+
+.chat-message img {
+	border-radius: 50%;
+	float: left;
+}
+.chat-message p{
+  min-height: 25px;
+}
+.chat-message-content {
+	margin-left: 56px;
+}
+
+.chat-time {
+	float: right;
+	font-size: 10px;
+}
+
+.chat-feedback {
+	font-style: italic;	
+	margin: 0 0 8px 0;
+}
 /* #endregion */
 
 /* start animation */
