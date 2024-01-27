@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     $(".chat-history").scrollTop($(".chat-history")[0].scrollHeight);
 
     // Play a sound
-    var audio = new Audio("../data/messageNotification.mp3");
+    var audio = new Audio("../Files/messageNotification.mp3");
     audio.volume = 0.1;
     audio.play();
   }
