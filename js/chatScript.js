@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     $(".chat-history").scrollTop($(".chat-history")[0].scrollHeight);
 
     // Play a sound
-    var audio = new Audio("../Files/messageNotification.mp3");
+    var audio = new Audio("../images/messageNotification.mp3");
     audio.volume = 0.1;
     audio.play();
   }
@@ -71,8 +71,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   var preMessages = [
     "Hello, Nice to meet you.",
     "I am chatbot tranied in Abubakr data",
-    "If sending messages is not working try to use vpn, if the problem still the same try to contact to me to solve this problem.",
-    "Important note: I am still learing, so my maybe mislaid, make sure about the infromation I gave you.",
+    "I am still learing, so maybe data will mislaid, make sure about the infromation I gave you.",
+    "Important note: If sending messages is not working try to use vpn, if the problem still the same try to contact to me to solve this problem",
   ];
 
   let countMessages = 0;
@@ -138,7 +138,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
           ],
         });
       })
-      .catch((error) => console.error("Error:", error))
+      .catch((error) => {
+        console.error("Error:", error)
+      })
       .finally(() => {
         $(".chat .chat-feedback").hide();
         $(".chat form button").attr("disabled", false).css("opacity", "1");
