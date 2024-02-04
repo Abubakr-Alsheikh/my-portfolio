@@ -1573,7 +1573,7 @@ footer .container p {
 }
 .chat fieldset .new-chat{
   border: none;
-  width: 32px;
+  width: 54px;
   cursor: pointer;
   background: var(--darkPinkRed-color);
   color: white;

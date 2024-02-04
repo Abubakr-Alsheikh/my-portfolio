@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
       .then((response) => response.text())
       .then((modelResponse) => {
-        var splitData = modelResponse.split(".");
+        var splitData = modelResponse.split(". ");
         let count = 0;
         console.log(splitData);
         intervalId = setInterval(function () {
