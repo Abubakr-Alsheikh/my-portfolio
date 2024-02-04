@@ -316,7 +316,7 @@ p#my-form-status.show {
   opacity: 0;
   filter: blur(5px);
   transform: translateY(-20px);
-  transition: 2s;
+  transition: 1s;
 }
 @media (prefers-reduce-motion) {
   .hidden {
@@ -1472,9 +1472,11 @@ footer .container p {
 	font-size: 12px;
 	right: 24px;
 	position: fixed;
-	width: 300px;
+	/* width: 300px; */
   border: 1px solid var(--text-color);
   border-radius: 16px;
+  margin-left: 24px;
+  transition: 0.3s;
 }
 
 #live-chat #header-chat {
@@ -1558,16 +1560,24 @@ footer .container p {
   overflow: hidden;
   border: 1px solid var(--text-color);
 }
-.chat fieldset button{
+.chat fieldset .send-button{
   width: 48px;
   border-radius: 0px 16px 16px 0px;
   background: var(--text-color);
   color: var(--bg-color);
-  font-size: 24px;
+  font-size: 16px;
   border: none;
   outline: none;
+  padding-right: 6px;
+  cursor: pointer;
 }
-
+.chat fieldset .new-chat{
+  border: none;
+  width: 32px;
+  cursor: pointer;
+  background: var(--darkPinkRed-color);
+  color: white;
+}
 .chat-history {
 	height: 252px;
 	padding: 8px 24px;
@@ -1585,6 +1595,7 @@ footer .container p {
 }
 .chat-message p{
   min-height: 25px;
+  font-size: 0.9rem;
 }
 .chat-message-content {
 	margin-left: 56px;

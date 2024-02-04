@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       $("#live-chat #header-chat").css("border-radius", "16px");
     } else {
       $("#live-chat #header-chat").css("border-radius", "16px 16px 0 0");
+      $("#live-chat").css("max-width", "500px");
     }
     isToggled = !isToggled;
   });
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // Index to keep track of the current message
   var messagesCounter = 0;
 
+  let audio = document.getElementById("audio-not");
   // Function to add a message to the chat history
   function addMessage(message, who, picture) {
     var now = new Date();
@@ -38,7 +40,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         <img src="images/${picture}" alt="" width="48" height="48">
         <div class="chat-message-content clearfix">
           <span class="chat-time">${time}</span>
-          <h5>${who}</h5>
+          <h3>${who}</h3>
           <p>${message}</p>
         </div> <!-- end chat-message-content -->
       </div> <!-- end chat-message -->
@@ -53,8 +55,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
     $(".chat-history").scrollTop($(".chat-history")[0].scrollHeight);
 
     // Play a sound
-    var audio = new Audio("messageNotification.mp3");
-    audio.volume = 0.1;
+    // var audio = new Audio("messageNotification.mp3");
+    // audio.volume = 0.1;
+    // audio.play();
+    audio.volume = 0.2;
     audio.play();
   }
 
@@ -84,12 +88,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let userChat = [];
 
   // When the button send click
-  $(".chat form button").on("click", function (e) {
+  $(".chat form .send-button").on("click", function (e) {
     e.preventDefault();
 
     // Get the user's message from the input field
     var userMessage = $('.chat form input[type="text"]').val();
 
+    console.log("clicked at send button");
     if (userMessage == "") {
       return;
     }
@@ -139,12 +144,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
         });
       })
       .catch((error) => {
-        addMessage("I am sorry, something bad happend, try again. Or try to use vpn, maybe it will fix the problem. if not try to contact me to fix the problem.", "Abubakr Alsheikh", "AbubakrAlsheikh.jpeg");
+        addMessage(
+          "I am sorry, something bad happend, try again. Or try to use vpn, maybe it will fix the problem. if not try to contact me to fix the problem.",
+          "Abubakr Alsheikh",
+          "AbubakrAlsheikh.jpeg"
+        );
         console.error("Error:", error);
       })
       .finally(() => {
         $(".chat .chat-feedback").hide();
         $(".chat form button").attr("disabled", false).css("opacity", "1");
       });
+  });
+  $(".chat form .new-chat").on("click", function (e) {
+    e.preventDefault();
+    userChat = [];
+    $(".chat-history").text("");
+    $(".chat-message-counter").text(0);
+    $(".chat form .new-chat").blur();
+    console.log("clicked");
   });
 });
