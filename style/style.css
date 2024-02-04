@@ -814,7 +814,7 @@ header .language ul li:first-child {
   margin: 0 auto;
   text-align: left;
 }
-@media (min-width:767px) {
+@media (min-width: 767px) {
   div.education {
     padding: 32px;
   }
@@ -882,7 +882,7 @@ header .language ul li:first-child {
   flex-wrap: wrap;
   text-align: left;
 }
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .skills-container {
     flex-direction: column;
   }
@@ -943,11 +943,10 @@ header .language ul li:first-child {
   top: 0;
   left: 0;
   height: 21px;
-  background: linear-gradient(45deg,#284181DD,#ff531dDD);
+  background: linear-gradient(45deg, #284181dd, #ff531ddd);
   /* background-color: var(--darkPinkRed-color); */
   border-radius: var(--b-r);
 }
-
 
 /* end about */
 /* #endregion */
@@ -1061,7 +1060,7 @@ header .language ul li:first-child {
     margin: 10px 0;
   }
 }
-.platforms{
+.platforms {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1075,7 +1074,7 @@ header .language ul li:first-child {
   width: 100%;
   color: var(--darkPinkRed-color);
 }
-.platforms h1::before {    
+.platforms h1::before {
   content: "";
   position: absolute;
   left: -9px;
@@ -1087,7 +1086,7 @@ header .language ul li:first-child {
 }
 .platforms .platforms-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 16px;
   width: 100%;
   justify-items: center;
@@ -1105,14 +1104,14 @@ header .language ul li:first-child {
   text-transform: capitalize;
   margin: 32px;
 }
-@media (max-width:480px) {
-.platforms .platform {
-  width: 300px;
-  height: 300px;
-  margin: 16px;
+@media (max-width: 480px) {
+  .platforms .platform {
+    width: 300px;
+    height: 300px;
+    margin: 16px;
+  }
 }
-}
-.platforms .platform img{
+.platforms .platform img {
   width: 100%;
 }
 
@@ -1125,12 +1124,12 @@ header .language ul li:first-child {
   display: flex;
   justify-content: space-between;
 }
-.platforms .info h3{
+.platforms .info h3 {
   padding: 16px 32px;
   flex-grow: 1;
   font-size: 1.3rem;
 }
-.platforms .info a{
+.platforms .info a {
   display: flex;
   width: 40%;
   height: 60px;
@@ -1140,20 +1139,18 @@ header .language ul li:first-child {
   text-decoration: underline;
   transition: var(--transition-time);
 }
-.platforms .info a:hover{
+.platforms .info a:hover {
   color: var(--bg-theme-color);
   background-color: var(--text-color);
 }
-@media (max-width:991px) {
-  .platforms.container{
+@media (max-width: 991px) {
+  .platforms.container {
     flex-direction: column;
   }
   .platforms h1 {
     margin-left: 32px;
-
   }
 }
-
 
 /* end services */
 /* #endregion */
@@ -1227,6 +1224,13 @@ header .language ul li:first-child {
   align-items: center;
   margin: 20px 0;
 }
+.projects .items-btns-container > p,
+.certificates .items-btns-container > p {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
 .projects .items-btns-container button,
 .certificates .items-btns-container button {
   min-width: 100px;
@@ -1272,8 +1276,8 @@ header .language ul li:first-child {
 .certificates .container .box img {
   height: 100%;
 }
-@media (max-width:991px) {
-  .certificates .container .box{
+@media (max-width: 991px) {
+  .certificates .container .box {
     height: 250px;
   }
 }
@@ -1468,11 +1472,11 @@ footer .container p {
 /* #region Live chat */
 
 #live-chat {
-	bottom: 40px;
-	font-size: 12px;
-	right: 24px;
-	position: fixed;
-	/* width: 300px; */
+  bottom: 40px;
+  font-size: 12px;
+  right: 24px;
+  position: fixed;
+  /* width: 300px; */
   border: 1px solid var(--text-color);
   border-radius: 16px;
   margin-left: 24px;
@@ -1480,59 +1484,59 @@ footer .container p {
 }
 
 #live-chat #header-chat {
-	background: var(--text-color);
-	border-radius: 16px 16px 0 0;
-	color: var(--bg-color);
-	cursor: pointer;
-	padding: 16px 24px;
+  background: var(--text-color);
+  border-radius: 16px 16px 0 0;
+  color: var(--bg-color);
+  cursor: pointer;
+  padding: 16px 24px;
 }
 
 #live-chat h4:before {
-	background: var(--orange-color);
-	border-radius: 50%;
-	content: "";
-	display: inline-block;
-	height: 8px;
-	margin: 0 8px 0 0;
-	width: 8px;
+  background: var(--orange-color);
+  border-radius: 50%;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  margin: 0 8px 0 0;
+  width: 8px;
 }
 
 #live-chat h4 {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 #live-chat h5 {
-	font-size: 10px;
+  font-size: 10px;
 }
 
 #live-chat form {
-	padding: 16px;
+  padding: 16px;
   border-top: 1px solid var(--text-color);
 }
 
 #live-chat input[type="text"] {
-	border: none;
-	padding: 8px;
-	outline: none;
+  border: none;
+  padding: 8px;
+  outline: none;
   flex-grow: 1;
 }
 
 .chat-message-counter {
-	background: var(--blue-color);
-	border: 1px solid var(--bg-color);
+  background: var(--blue-color);
+  border: 1px solid var(--bg-color);
   color: white;
-	border-radius: 50%;
-	display: none;
-	font-size: 12px;
-	font-weight: bold;
-	height: 28px;
-	left: 0;
-	line-height: 28px;
-	margin: -15px 0 0 -15px;
-	position: absolute;
-	text-align: center;
-	top: 0;
-	width: 28px;
+  border-radius: 50%;
+  display: none;
+  font-size: 12px;
+  font-weight: bold;
+  height: 28px;
+  left: 0;
+  line-height: 28px;
+  margin: -15px 0 0 -15px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 28px;
 }
 
 /* .chat-close {
@@ -1550,17 +1554,17 @@ footer .container p {
 } */
 
 .chat {
-	background: var(--bg-color);
+  background: var(--bg-color);
   color: var(--text-color);
   border-radius: 0 0 16px 16px;
 }
-.chat fieldset{
+.chat fieldset {
   display: flex;
   border-radius: 32px;
   overflow: hidden;
   border: 1px solid var(--text-color);
 }
-.chat fieldset .send-button{
+.chat fieldset .send-button {
   width: 48px;
   border-radius: 0px 16px 16px 0px;
   background: var(--text-color);
@@ -1571,7 +1575,7 @@ footer .container p {
   padding-right: 6px;
   cursor: pointer;
 }
-.chat fieldset .new-chat{
+.chat fieldset .new-chat {
   border: none;
   width: 54px;
   cursor: pointer;
@@ -1579,36 +1583,36 @@ footer .container p {
   color: white;
 }
 .chat-history {
-	height: 252px;
-	padding: 8px 24px;
-	overflow-y: scroll;
+  height: 252px;
+  padding: 8px 24px;
+  overflow-y: scroll;
   border-radius: 16px;
 }
 
 .chat-message {
-	margin: 16px 0;
+  margin: 16px 0;
 }
 
 .chat-message img {
-	border-radius: 50%;
-	float: left;
+  border-radius: 50%;
+  float: left;
 }
-.chat-message p{
+.chat-message p {
   min-height: 25px;
   font-size: 0.9rem;
 }
 .chat-message-content {
-	margin-left: 56px;
+  margin-left: 56px;
 }
 
 .chat-time {
-	float: right;
-	font-size: 10px;
+  float: right;
+  font-size: 10px;
 }
 
 .chat-feedback {
-	font-style: italic;	
-	margin: 0 0 8px 0;
+  font-style: italic;
+  margin: 0 0 8px 0;
 }
 /* #endregion */
 
