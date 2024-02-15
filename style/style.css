@@ -172,6 +172,40 @@ p#my-form-status.show {
   top: 20%;
 }
 
+/* Create a full screen overlay */
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: flex; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: var(--bg-theme-color); /* Black fallback color */
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-time);
+  opacity: 1;
+}
+.overlay.hide{
+  opacity: 0;
+}
+/* The spinner */
+.overlay .spinner {
+  border: 16px solid var(--bg-color);
+  border-top: 16px solid var(--orange-color);
+  border-bottom: 16px solid var(--blue-color);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 /* end componants */
 
 /* start curves */
