@@ -1,21 +1,19 @@
 import projects from "../data/projects.json" assert { type: "json" };
 import certificates from "../data/certificates.json" assert { type: "json" };
-import education from "../data/eductaion.json" assert { type: "json" };
+import education from "../data/education.json" assert { type: "json" };
 import skills from "../data/skills.json" assert { type: "json" };
 import platforms from "../data/platforms.json" assert { type: "json" };
-// import { Translator } from "./translate.js";
 
 window.addEventListener("DOMContentLoaded", function () {
   showProjects(projects.reverse());
   showProjectBtns();
-
-  // showCertificates(certificates);
   showCertificates(
     certificates.reverse().filter(function (certificate) {
       return certificate.type == "specialization";
     })
   );
   showCertificateBtns();
+  
   loadEducation();
   loadSkills();
   loadPlatforms();
@@ -40,7 +38,6 @@ function showProjects(projectData) {
 }
 
 const prosBtns = document.querySelector(".projects .btns");
-let proPreviousType = "all";
 prosBtns.addEventListener("click", function (e) {
   if (e.target.dataset.type == undefined) return;
   addClassActive(e);
