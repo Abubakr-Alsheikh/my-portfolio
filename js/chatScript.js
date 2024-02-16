@@ -1,5 +1,21 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-  const [chat, headerChat, chatMessageCounter, chatFeedback, sendButton, newChatButton, chatHistory] = [".chat", "#live-chat #header-chat", ".chat-message-counter", ".chat .chat-feedback", ".chat form .send-button", ".chat form .new-chat", ".chat-history"].map(s => $(s));
+  const [
+    chat,
+    headerChat,
+    chatMessageCounter,
+    chatFeedback,
+    sendButton,
+    newChatButton,
+    chatHistory,
+  ] = [
+    ".chat",
+    "#live-chat #header-chat",
+    ".chat-message-counter",
+    ".chat .chat-feedback",
+    ".chat form .send-button",
+    ".chat form .new-chat",
+    ".chat-history",
+  ].map((s) => $(s));
   const audio = document.getElementById("audio-not");
 
   let [isToggled, messagesCounter, userChat] = [false, 0, []];
@@ -8,25 +24,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
     [
       "Hello, it's a pleasure to meet you.",
       "Hi there, delighted to make your acquaintance.",
-      "Greetings, I'm glad to meet you."
+      "Greetings, I'm glad to meet you.",
     ],
     [
       "I am a chatbot, trained using data from Abubakr.",
       "I'm a chatbot, my training is based on Abubakr's data.",
-      "As a chatbot, I've been trained on data provided by Abubakr."
+      "As a chatbot, I've been trained on data provided by Abubakr.",
     ],
     [
       "Please note that I am still in the learning phase, so there may be instances where the data could be misleading. Always verify the information I provide.",
       "Bear in mind that I'm still learning, so the data might not always be accurate. Please double-check any information I give you.",
-      "I'm still in the process of learning, so the data might occasionally be incorrect. It's always a good idea to confirm the information I share."
+      "I'm still in the process of learning, so the data might occasionally be incorrect. It's always a good idea to confirm the information I share.",
     ],
     [
       "Important: If you're having trouble sending messages, consider using a VPN. If the issue persists, please don't hesitate to contact me for further assistance.",
       "Important notice: If message sending isn't working, you might want to try using a VPN. If that doesn't solve the problem, feel free to reach out to me for help.",
-      "Please note: If you're experiencing issues with sending messages, a VPN could be a solution. If the problem continues, don't hesitate to get in touch with me."
-    ]
+      "Please note: If you're experiencing issues with sending messages, a VPN could be a solution. If the problem continues, don't hesitate to get in touch with me.",
+    ],
   ];
-  
+
   // Initialize chat
   chat.slideToggle(1, "swing");
   headerChat.css("border-radius", "16px");
@@ -38,7 +54,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   newChatButton.on("click", resetChat);
 
   let countMessages = 0;
-  let intervalId = setInterval(() => displayMessages(preMessages, countMessages++), 1500);
+  let intervalId = setInterval(
+    () => displayMessages(preMessages, countMessages++),
+    1500
+  );
 
   function toggleChat() {
     chat.slideToggle(300, "swing");
@@ -49,7 +68,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   }
 
   function addMessage(message, who, picture) {
-    const time = new Date().toTimeString().split(' ')[0];
+    const time = new Date().toTimeString().split(" ")[0];
     chatMessageCounter.text(++messagesCounter);
     chatHistory.append(`
       <div class="chat-message clearfix">
@@ -70,7 +89,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   function displayMessages(messages, count) {
     if (count < messages.length && messages[count] != "") {
       let message = messages[count];
-      if(messages[count].length > 0){
+      if (Array.isArray(messages[count]) && messages[count].length > 0) {
         let randomIndex = Math.floor(Math.random() * messages[count].length);
         message = messages[count][randomIndex];
       }
@@ -81,7 +100,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       clearInterval(intervalId);
     }
   }
-  
 
   function sendMessage(e) {
     e.preventDefault();
@@ -99,12 +117,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
       .then((response) => response.text())
       .then((modelResponse) => {
         let count = 0;
-        intervalId = setInterval(() => displayMessages(modelResponse.split(". "), count++), 2000);
+        intervalId = setInterval(
+          () => displayMessages(modelResponse.split(". "), count++),
+          2000
+        );
         userChat.push({ role: "user", parts: [{ text: userMessage }] });
         userChat.push({ role: "model", parts: [{ text: modelResponse }] });
       })
       .catch((error) => {
-        addMessage("I am sorry, something bad happened, try again. Or try to use VPN, maybe it will fix the problem. If not, try to contact me to fix the problem.", "Abubakr Alsheikh", "AbubakrAlsheikh.jpeg");
+        addMessage(
+          "I am sorry, something bad happened, try again. Or try to use VPN, maybe it will fix the problem. If not, try to contact me to fix the problem.",
+          "Abubakr Alsheikh",
+          "AbubakrAlsheikh.jpeg"
+        );
         console.error("Error:", error);
       })
       .finally(() => {
