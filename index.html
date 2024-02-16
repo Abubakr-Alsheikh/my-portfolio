@@ -545,6 +545,23 @@
     <!-- <script src="js/lightbox-plus-jquery.min.js"></>
     <script src="js/lightbox.min.js"></script> -->
 
+    <script>
+      let isDarkMode = localStorage.getItem("darkMode") === "true";
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches &&
+        (isDarkMode || localStorage.getItem("darkMode") === null)
+      ) {
+        isDarkMode = true;
+      }
+      if (isDarkMode) {
+        document.body.classList.add("dark-mode");
+        document.querySelector(".home .container .image img").setAttribute(
+          "src",
+          "images/AbubakrAlsheikhDark.jpeg"
+        );
+      }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>

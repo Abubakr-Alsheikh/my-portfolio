@@ -5,7 +5,7 @@
         "image-project":"images/Projects/Projects Pictures/lona.jpg",
         "image-laptop":"images/Projects/Lona Preview.jpg", 
         "url":"https://abubakr-alsheikh.github.io/leon-website/",
-        "type":"front end"
+        "type":"other"
     },
     {
         "id":2,
@@ -13,7 +13,7 @@
         "image-project":"images/Projects/Projects Pictures/kasperTemp.jpg",
         "image-laptop":"images/Projects/kasper Preview.jpg",
         "url":"https://abubakr-alsheikh.github.io/kasper-website/",
-        "type":"front end"
+        "type":"other"
     },
     {
         "id":3,
@@ -21,7 +21,7 @@
         "image-project":"images/Projects/Projects Pictures/ElzeroTemp.jpg",
         "image-laptop":"images/Projects/Elzero Preview.jpg",
         "url":"https://abubakr-alsheikh.github.io/elzero-template-website",
-        "type":"front end"
+        "type":"other"
     },
     {
         "id":4,
@@ -29,7 +29,7 @@
         "image-project":"images/Projects/Projects Pictures/MovieSite.jpg",
         "image-laptop":"images/Projects/MovieSite Preview.jpg",
         "url":"https://abubakr-alsheikh.github.io/movie-website/",
-        "type":"front end"
+        "type":"other"
     },
     {
         "id":5,
@@ -37,7 +37,7 @@
         "image-project":"images/Projects/Projects Pictures/samaMedia.jpg",
         "image-laptop":"images/Projects/SamaMedia Preview.jpg",
         "url":"https://samamedia.000webhostapp.com/",
-        "type":"back end"
+        "type":"top"
     },
     {
         "id":6,
@@ -45,6 +45,6 @@
         "image-project":"images/Projects/Projects Pictures/ElzeroDashboard.png",
         "image-laptop":"images/Projects/ElzeroDashboard Preview.jpg",
         "url":"https://abubakr-alsheikh.github.io/dashboard-website",
-        "type":"front end"
+        "type":"other"
     }
 ]

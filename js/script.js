@@ -10,21 +10,6 @@ const domElements = {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  let isDarkMode = localStorage.getItem("darkMode") === "true";
-  if (
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches &&
-    (isDarkMode || localStorage.getItem("darkMode") === null)
-  ) {
-    isDarkMode = true;
-  }
-  if (isDarkMode) {
-    domElements.bodyElement.classList.add("dark-mode");
-    domElements.imageElement.setAttribute(
-      "src",
-      "images/AbubakrAlsheikhDark.jpeg"
-    );
-  }
 
   document.getElementById("overlay").classList.add("hide");
   setTimeout(() => {

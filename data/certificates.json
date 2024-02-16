@@ -4,167 +4,167 @@
         "title":"html",
         "image":"images/Certificates/Web design for everybody/HTML.jpeg",
         "url":"https://coursera.org/verify/8S9XQWSE88KB",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":2,
         "title":"css",
         "image":"images/Certificates/Web design for everybody/CSS.jpeg",
         "url":"https://coursera.org/verify/4HSBD74W3G4Z",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":3,
         "title":"advanced css",
         "image":"images/Certificates/Web design for everybody/Advanced CSS.jpeg",
         "url":"https://coursera.org/verify/A9KWRLGVX4TU",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":4,
         "title":"JavaScript",
         "image":"images/Certificates/Web design for everybody/JavaScript.jpeg",
         "url":"https://coursera.org/verify/UFXA6LEWMAKK",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":5,
         "title":"Web Design for Everybody Capstone",
         "image":"images/Certificates/Web design for everybody/Web Design for Everybody Capstone.jpg",
         "url":"https://coursera.org/verify/N9FUPRBZNUHW",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":6,
         "title":"Webdesign for everybody",
         "image":"images/Certificates/Web design for everybody/Webdesign for everybody.jpeg",
         "url":"https://coursera.org/verify/specialization/UERU9T5YRQWS",
-        "type":"specialization"
+        "type":"top"
     },
     {
         "id":7,
         "title":"Building Web Applications in PHP",
         "image":"images/Certificates/Web Applications for Everybody/Building Web Applications in PHP.jpg",
         "url":"https://coursera.org/verify/9MW68H78WDKS",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":8,
         "title":"Structured Query Language",
         "image":"images/Certificates/Web Applications for Everybody/Introduction to Structured Query Language.jpg",
         "url":"https://coursera.org/verify/BNBWX3J4S8V4",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":9,
         "title":"Building Database Applications",
         "image":"images/Certificates/Web Applications for Everybody/Building Database Applications in PHP.jpeg",
         "url":"https://coursera.org/verify/F84744HRCDRL",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":10,
         "title":"JavaScript, jQuery, and JSON",
         "image":"images/Certificates/Web Applications for Everybody/JavaScript, jQuery, and JSON.jpg",
         "url":"https://coursera.org/verify/SCNXSMBPQAFR",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":11,
         "title":"Web Applications for Everybody",
         "image":"images/Certificates/Web Applications for Everybody/Web Applications for Everybody.jpg",
         "url":"https://coursera.org/verify/specialization/F7RBLWC5AGB3",
-        "type":"specialization"
+        "type":"top"
     },
     {
         "id":12,
         "title":"Getting Started with Python",
         "image":"images/Certificates/Python for Everybody/Programming for Everybody.jpg",
         "url":"https://coursera.org/verify/RH57HCNB8FP7",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":13,
         "title":"Python Data Structures",
         "image":"images/Certificates/Python for Everybody/Python Data Structures.png",
         "url":"https://coursera.org/verify/2RUMELQB6PBZ",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":14,
         "title":"Using Python to Access Web Data",
         "image":"images/Certificates/Python for Everybody/Using Python to Access Web Data.png",
         "url":"https://coursera.org/verify/N2657JBVMH8A",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":15,
         "title":"Using Databases with Python",
         "image":"images/Certificates/Python for Everybody/Using Databases with Python.png",
         "url":"https://coursera.org/verify/SAR286WGSPVY",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":16,
         "title":"Capstone: R.P.V Data with Python",
         "image":"images/Certificates/Python for Everybody/Capstone Retrieving, Processing, and Visualizing.png",
         "url":"https://coursera.org/verify/VBQTN7HY99VE",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":17,
         "title":"Python for Everybody",
         "image":"images/Certificates/Python for Everybody/Python for Everybody.png",
         "url":"https://coursera.org/verify/specialization/QTNT2MHPT8M7",
-        "type":"specialization"
+        "type":"top"
     },
     {
         "id":18,
         "title":"Technical diploma",
         "image":"images/Certificates/Technical diploma certificate.jpg",
         "url":"",
-        "type":"specialization"
+        "type":"top"
     },
     {
         "id":24,
         "title":"EF Standard English Test",
         "image":"images/Certificates/EF SET Certificate.jpeg",
         "url":"https://efset.org/cert/T7x6T7",
-        "type":"specialization"
+        "type":"top"
     },
     {
         "id":19,
         "title":"Web Application Technologies and Django",
         "image":"images/Certificates/Django for Everybody/Web Application Technologies and Django.jpeg",
         "url":"https://coursera.org/verify/NMRHG7J6BHTY",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":20,
         "title":"Building Web Applications in Django",
         "image":"images/Certificates/Django for Everybody/Building Web Applications in Django.jpeg",
         "url":"https://coursera.org/verify/6EHD4UUNY9XS",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":21,
         "title":"Django Features and Libraries",
         "image":"images/Certificates/Django for Everybody/Django Features and Libraries.jpeg",
         "url":"https://coursera.org/verify/RJDJF6NDG9A6",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":22,
         "title":"Using JavaScript and JSON in Django",
         "image":"images/Certificates/Django for Everybody/Using JavaScript and JSON in Django.jpeg",
         "url":"https://coursera.org/verify/2X26USBKJN6G",
-        "type":"course"
+        "type":"other"
     },
     {
         "id":23,
         "title":"Django for Everybody",
         "image":"images/Certificates/Django for Everybody/Django for Everybody.jpeg",
         "url":"https://coursera.org/verify/specialization/DC49ZLKAM5TQ",
-        "type":"specialization"
+        "type":"top"
     }
 ]
