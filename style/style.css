@@ -187,7 +187,7 @@ p#my-form-status.show {
   transition: var(--transition-time);
   opacity: 1;
 }
-.overlay.hide{
+.overlay.hide {
   opacity: 0;
 }
 /* The spinner */
@@ -212,8 +212,12 @@ p#my-form-status.show {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* end componants */
@@ -772,6 +776,11 @@ header .language ul li:first-child {
     margin: 10px 0;
   }
 }
+@media (max-width: 480px) {
+  .home .container .info {
+    margin-top: 72px;
+  }
+}
 /* end home */
 /* #endregion */
 
@@ -1271,9 +1280,11 @@ header .language ul li:first-child {
 .projects .items-btns-container > p,
 .certificates .items-btns-container > p {
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
   color: var(--text-color);
+  margin: 32px;
+  margin-top: 10px;
 }
 .projects .items-btns-container button,
 .certificates .items-btns-container button {
@@ -1534,7 +1545,6 @@ footer .container p {
   cursor: pointer;
   padding: 16px 24px;
 }
-
 #live-chat h4:before {
   background: var(--orange-color);
   border-radius: 50%;
@@ -1549,6 +1559,20 @@ footer .container p {
   font-size: 12px;
 }
 
+#live-chat #header-chat h4 span {
+  border: 3px solid var(--bg-color);
+  border-radius: 50%;
+  padding: 4px 6px;
+  margin-left: 8px;
+}
+#live-chat #header-chat.opened h4 span {
+  display: none;
+}
+@media (max-width: 350px) {
+  #live-chat #header-chat h4 span {
+    display: none;
+  }
+}
 #live-chat h5 {
   font-size: 10px;
 }

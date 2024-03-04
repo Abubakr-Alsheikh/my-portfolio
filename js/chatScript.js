@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     headerChat.css("border-radius", isToggled ? "16px" : "16px 16px 0 0");
     if (!isToggled) $("#live-chat").css("max-width", "500px");
     isToggled = !isToggled;
+    $("#header-chat").toggleClass("opened");
   }
 
   function addMessage(message, who, picture) {

@@ -46,5 +46,13 @@
         "image-laptop":"images/Projects/ElzeroDashboard Preview.jpg",
         "url":"https://abubakr-alsheikh.github.io/dashboard-website",
         "type":"other"
+    },
+    {
+        "id":7,
+        "title":"Online book inventory system",
+        "image-project":"images/Projects/Projects Pictures/onlineBook.jpeg",
+        "image-laptop":"images/Projects/Online book inventory system.jpg",
+        "url":"https://abubakralsheikh.bsite.net/",
+        "type":"top"
     }
 ]

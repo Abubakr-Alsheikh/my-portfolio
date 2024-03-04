@@ -2,16 +2,23 @@
   
   {
     "id": 1,
-    "title": "Computer engineering",
+    "title": "Software engineering",
     "place": "Aleppo University | Technical Diploma",
     "date": "2021 - 2023",
-    "degree": "90.36%"
+    "degree": "90.36% | 1st graduate"
   },
   {
     "id": 2,
-    "title": "information technology engineer",
-    "place": "Syrian Virtual University | Bachelor",
+    "title": "information technology engineering",
+    "place": "Syrian Virtual University | Bachelor's",
     "date": "2021 - 2026",
+    "degree": ""
+  },
+  {
+    "id": 3,
+    "title": "Software engineering",
+    "place": "Aleppo University | Bachelor's",
+    "date": "2023 - 2028",
     "degree": ""
   }
 ]
