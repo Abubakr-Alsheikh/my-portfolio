@@ -5,12 +5,35 @@ import skills from "../data/skills.json" assert { type: "json" };
 import platforms from "../data/platforms.json" assert { type: "json" };
 
 window.addEventListener("DOMContentLoaded", () => {
-  loadData(projects, showProjects, ".projects", "all");
+  loadData(projects, showProjects, ".projects", "top");
   loadData(certificates, showCertificates, ".certificates", "top");
   loadEducation();
   loadSkills();
   loadPlatforms();
+  updateBoxFillter();
 });
+
+function updateBoxFillter(){
+  // const boxes = document.querySelectorAll('.projects .container .box');
+  const boxes = document.querySelectorAll('.projects .container .box, .certificates .container .box');
+        
+  window.addEventListener('scroll', function() {
+    boxes.forEach(box => {
+      const boxRect = box.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      // Check if the box is in the middle of the viewport
+      const isCentered = boxRect.top <= (windowHeight / 2) && 
+                        boxRect.bottom >= (windowHeight / 2);
+
+      if (isCentered) {
+        box.querySelector('img').style.filter = 'grayscale(0)';
+      } else {
+        box.querySelector('img').style.filter = 'grayscale(1)';
+      }
+    });
+  });
+}
 
 function loadData(data, showFunction, sectionClass, typeToShow) {
   const section = document.querySelector(`${sectionClass} .container`);
@@ -31,6 +54,7 @@ function loadData(data, showFunction, sectionClass, typeToShow) {
       typeData == "all" ? data : data.filter((item) => item.type == typeData),
       section
     );
+    updateBoxFillter();
   });
 }
 
@@ -61,7 +85,7 @@ function showBtns(data, btns, typeToShow) {
     )
     .map(
       (type) =>
-        `<button data-type="${type}" class="${
+        `<button data-type="${type}" class="text-shadow ${
           type == typeToShow ? "active" : ""
         }"  >${type}</button>`
     )

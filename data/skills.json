@@ -17,12 +17,12 @@
       "prograss": "80%"
     },
     {
-      "skill": "React",
-      "prograss": "70%"
+      "skill": "Tailwind",
+      "prograss": "65%"
     },
     {
-      "skill": "Vue",
-      "prograss": "40%"
+      "skill": "React",
+      "prograss": "70%"
     }
   ],
   "Back End": [
@@ -49,7 +49,7 @@
       "prograss": "70%"
     },
     {
-      "skill": "SQL Server",
+      "skill": "MS SQL",
       "prograss": "75%"
     },
     {
@@ -71,6 +71,10 @@
     {
       "skill": "C#",
       "prograss": "80%"
+    },
+    {
+      "skill": "C++",
+      "prograss": "65%"
     },
     {
       "skill": "Python",

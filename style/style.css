@@ -462,11 +462,11 @@ header .toggle-menu span {
 }
 header .toggle-menu span:nth-child(1) {
   background-color: var(--orange-color);
-  width: 25%;
+  width: 35%;
 }
 header .toggle-menu span:nth-child(2) {
   background-color: var(--darkPinkRed-color);
-  width: 50%;
+  width: 75%;
 }
 header .toggle-menu span:nth-child(3) {
   background-color: var(--darkPinkRed-color);
@@ -474,12 +474,13 @@ header .toggle-menu span:nth-child(3) {
 }
 header .toggle-menu span:nth-child(4) {
   background-color: var(--blue-color);
-  width: 100%;
+  width: 35%;
 }
 
 header nav:hover .toggle-menu span:nth-child(1),
 header nav:hover .toggle-menu span:nth-child(2),
-header nav:hover .toggle-menu span:nth-child(3) {
+header nav:hover .toggle-menu span:nth-child(3),
+header nav:hover .toggle-menu span:nth-child(4) {
   width: 100%;
 }
 
@@ -1651,7 +1652,7 @@ footer .container p {
   color: white;
 }
 .chat-history {
-  height: 252px;
+  height: 400px;
   padding: 8px 24px;
   overflow-y: scroll;
   border-radius: 16px;

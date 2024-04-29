@@ -54,5 +54,13 @@
         "image-laptop":"images/Projects/Online book inventory system.jpg",
         "url":"https://abubakralsheikh.bsite.net/",
         "type":"top"
+    },
+    {
+        "id":8,
+        "title":"E-commerce webiste",
+        "image-project":"images/Projects/Projects Pictures/Ecommerce webiste.jpeg",
+        "image-laptop":"images/Projects/Ecommerce webiste Preview.jpg",
+        "url":"https://abubakralsheikh.pythonanywhere.com/",
+        "type":"top"
     }
 ]
