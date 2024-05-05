@@ -110,21 +110,24 @@ document.addEventListener("DOMContentLoaded", (event) => {
     chatFeedback.show();
     addMessage(userMessage, "You", "user.jpg");
     $('.chat form input[type="text"]').val("");
-    fetch("https://exuberant-book-production.up.railway.app/webhook-1", {
+    // https://exuberant-book-production.up.railway.app/webhook-1
+    fetch("https://abubakralsheikh.pythonanywhere.com/chat-response/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: userMessage, userchat: userChat }),
     })
-      .then((response) => response.text())
-      .then((modelResponse) => {
+    .then((response) => response.json()) // Parse the JSON response
+    .then((data) => {
+        let modelResponse = data.response; // Extract the 'response' property
+
         let count = 0;
         intervalId = setInterval(
-          () => displayMessages(modelResponse.split(". "), count++),
-          2000
+            () => displayMessages(modelResponse.split(". "), count++),
+            2000
         );
         userChat.push({ role: "user", parts: [{ text: userMessage }] });
         userChat.push({ role: "model", parts: [{ text: modelResponse }] });
-      })
+    })
       .catch((error) => {
         addMessage(
           "I am sorry, something bad happened, try again. Or try to use VPN, maybe it will fix the problem. If not, try to contact me to fix the problem.",
@@ -137,8 +140,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
         chatFeedback.hide();
         sendButton.attr("disabled", false).css("opacity", "1");
       });
+      // .then((response) => response.text())
+      // .then((modelResponse) => {
+      //   let count = 0;
+      //   intervalId = setInterval(
+      //     () => displayMessages(modelResponse.split(". "), count++),
+      //     2000
+      //   );
+      //   userChat.push({ role: "user", parts: [{ text: userMessage }] });
+      //   userChat.push({ role: "model", parts: [{ text: modelResponse }] });
+      // })
   }
-
+  
   function resetChat(e) {
     e.preventDefault();
     userChat = [];
