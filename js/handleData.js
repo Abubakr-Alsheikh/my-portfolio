@@ -62,7 +62,7 @@ function showProjects(projectData, section) {
   section.innerHTML = projectData
     .map(
       (project) =>
-        `<div class="box"><a href="${project["image-project"]}" data-lightbox="project" data-title="You can see the website by <a href='${project.url}' target='_blank'>Clicking Here</a>"><img src="${project["image-laptop"]}" alt="${project.title}" srcset="" /></a><p>${project.title}</p></div>`
+        `<div class="box"><a href="${project["image-project"]}" data-lightbox="project" data-title="${project.title}<br>You can see the website by <a href='${project.url}' target='_blank'>Clicking Here</a>"><img src="${project["image-laptop"]}" alt="${project.title}" srcset="" /></a><p>${project.title}</p></div>`
     )
     .join("");
 }
@@ -71,7 +71,7 @@ function showCertificates(certificateData, section) {
   section.innerHTML = certificateData
     .map(
       (certificate) =>
-        `<div class="box"><a href="${certificate.image}" data-lightbox="certificates" data-title="If you want to see the certificate <a href='${certificate.url}' target='_blank'>Click Here</a>"><img src="${certificate.image}" alt="${certificate.title}"/></a><p>${certificate.title}</p></div>`
+        `<div class="box"><a href="${certificate.image}" data-lightbox="certificates" data-title="${certificate.title}<br>If you want to see the certificate <a href='${certificate.url}' target='_blank'>Click Here</a>"><img src="${certificate.image}" alt="${certificate.title}"/></a><p>${certificate.title}</p></div>`
     )
     .join("");
 }

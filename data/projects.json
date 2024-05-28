@@ -36,7 +36,7 @@
         "title":"sama media",
         "image-project":"images/Projects/Projects Pictures/samaMedia.jpg",
         "image-laptop":"images/Projects/SamaMedia Preview.jpg",
-        "url":"https://samamedia.000webhostapp.com/",
+        "url":"https://sama-media.infinityfreeapp.com/",
         "type":"top"
     },
     {
@@ -49,6 +49,14 @@
     },
     {
         "id":7,
+        "title":"ReactJS Blog",
+        "image-project":"images/Projects/Projects Pictures/ReactJS blog.jpeg",
+        "image-laptop":"images/Projects/ReactJS blog.jpg",
+        "url":"https://delicate-macaron-e1f854.netlify.app/",
+        "type":"other"
+    },
+    {
+        "id":8,
         "title":"Online book inventory system",
         "image-project":"images/Projects/Projects Pictures/onlineBook.jpeg",
         "image-laptop":"images/Projects/Online book inventory system.jpg",
@@ -56,11 +64,19 @@
         "type":"top"
     },
     {
-        "id":8,
+        "id":9,
         "title":"E-commerce webiste",
         "image-project":"images/Projects/Projects Pictures/Ecommerce webiste.jpeg",
         "image-laptop":"images/Projects/Ecommerce webiste Preview.jpg",
         "url":"https://abubakralsheikh.pythonanywhere.com/",
+        "type":"top"
+    },
+    {
+        "id":10,
+        "title":"AskVid: get answers from videos and audio",
+        "image-project":"images/Projects/Projects Pictures/AskVid.jpeg",
+        "image-laptop":"images/Projects/AskVid.jpg",
+        "url":"https://abubakralsheikh.pythonanywhere.com/askvid/",
         "type":"top"
     }
 ]

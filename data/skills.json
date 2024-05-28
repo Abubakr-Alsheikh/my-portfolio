@@ -27,20 +27,16 @@
   ],
   "Back End": [
     {
-      "skill": "PHP",
-      "prograss": "80%"
-    },
-    {
       "skill": "Django",
       "prograss": "70%"
     },
     {
-      "skill": "Asp.net",
-      "prograss": "65%"
+      "skill": "PHP",
+      "prograss": "80%"
     },
     {
-      "skill": "Node.js",
-      "prograss": "30%"
+      "skill": "Asp.net",
+      "prograss": "65%"
     }
   ],
   "Data Bases": [
@@ -54,7 +50,7 @@
     },
     {
       "skill": "SQLite",
-      "prograss": "50%"
+      "prograss": "60%"
     }
   ],
   "Design tools": [
@@ -73,12 +69,12 @@
       "prograss": "80%"
     },
     {
-      "skill": "C++",
-      "prograss": "65%"
-    },
-    {
       "skill": "Python",
       "prograss": "70%"
+    },
+    {
+      "skill": "C++",
+      "prograss": "65%"
     }
   ],
   "Other": [

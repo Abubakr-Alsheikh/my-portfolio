@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const audio = document.getElementById("audio-not");
 
   let [isToggled, messagesCounter, userChat] = [false, 0, []];
-  // let preMessages = ["Hello, Nice to meet you.", "I am chatbot trained in Abubakr data", "I am still learning, so maybe data will mislead, make sure about the information I gave you.", "Important note: If sending messages is not working try to use VPN, if the problem still the same try to contact me to solve this problem"];
+  
   let preMessages = [
     [
       "Hello, it's a pleasure to meet you.",
@@ -110,24 +110,23 @@ document.addEventListener("DOMContentLoaded", (event) => {
     chatFeedback.show();
     addMessage(userMessage, "You", "user.jpg");
     $('.chat form input[type="text"]').val("");
-    // https://exuberant-book-production.up.railway.app/webhook-1
     fetch("https://abubakralsheikh.pythonanywhere.com/chat-response/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: userMessage, userchat: userChat }),
     })
-    .then((response) => response.json()) // Parse the JSON response
-    .then((data) => {
+      .then((response) => response.json()) // Parse the JSON response
+      .then((data) => {
         let modelResponse = data.response; // Extract the 'response' property
 
         let count = 0;
         intervalId = setInterval(
-            () => displayMessages(modelResponse.split(". "), count++),
-            2000
+          () => displayMessages(modelResponse.split(". "), count++),
+          2000
         );
         userChat.push({ role: "user", parts: [{ text: userMessage }] });
         userChat.push({ role: "model", parts: [{ text: modelResponse }] });
-    })
+      })
       .catch((error) => {
         addMessage(
           "I am sorry, something bad happened, try again. Or try to use VPN, maybe it will fix the problem. If not, try to contact me to fix the problem.",
@@ -140,18 +139,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
         chatFeedback.hide();
         sendButton.attr("disabled", false).css("opacity", "1");
       });
-      // .then((response) => response.text())
-      // .then((modelResponse) => {
-      //   let count = 0;
-      //   intervalId = setInterval(
-      //     () => displayMessages(modelResponse.split(". "), count++),
-      //     2000
-      //   );
-      //   userChat.push({ role: "user", parts: [{ text: userMessage }] });
-      //   userChat.push({ role: "model", parts: [{ text: modelResponse }] });
-      // })
   }
-  
+
   function resetChat(e) {
     e.preventDefault();
     userChat = [];

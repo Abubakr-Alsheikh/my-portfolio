@@ -1257,6 +1257,10 @@ header .language ul li:first-child {
 }
 .projects .container .box p,
 .certificates .container .box p {
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 0.9rem;
   position: absolute;
   text-align: center;
