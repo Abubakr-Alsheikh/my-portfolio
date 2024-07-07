@@ -232,7 +232,7 @@ const certificates = [
     title: "EF Standard English Test",
     image: "images/Certificates/EF SET Certificate.jpeg",
     url: "https://efset.org/cert/T7x6T7",
-    type: "top",
+    type: "other",
   },
   {
     id: 19,
@@ -271,6 +271,13 @@ const certificates = [
     title: "Django for Everybody",
     image: "images/Certificates/Django for Everybody/Django for Everybody.jpeg",
     url: "https://coursera.org/verify/specialization/DC49ZLKAM5TQ",
+    type: "top",
+  },
+  {
+    id: 24,
+    title: "Meta Front-End Developer",
+    image: "images/Certificates/Meta Front-End Developer.jpeg",
+    url: "https://coursera.org/verify/professional-cert/V4MF3W9N5V5X",
     type: "top",
   },
 ];
