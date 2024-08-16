@@ -24,14 +24,6 @@ const projects = [
     type: "other",
   },
   {
-    id: 4,
-    title: "Movie website",
-    "image-project": "images/Projects/Projects Pictures/MovieSite.jpg",
-    "image-laptop": "images/Projects/MovieSite Preview.jpg",
-    url: "https://abubakr-alsheikh.github.io/movie-website/",
-    type: "other",
-  },
-  {
     id: 5,
     title: "sama media",
     "image-project": "images/Projects/Projects Pictures/samaMedia.jpg",
@@ -85,6 +77,14 @@ const projects = [
     "image-project": "images/Projects/Projects Pictures/AskVid.jpeg",
     "image-laptop": "images/Projects/AskVid.jpg",
     url: "https://abubakralsheikh.pythonanywhere.com/askvid/",
+    type: "top",
+  },
+  {
+    id: 12,
+    title: "Screen Scene: A Dynamic Movie Website Built with Django & TMDB API",
+    "image-project": "images/Projects/Projects Pictures/screen scene.jpeg",
+    "image-laptop": "images/Projects/screen scene.png",
+    url: "https://abubakralsheikh.pythonanywhere.com/screen-scene/",
     type: "top",
   },
 ];
@@ -298,7 +298,7 @@ const education = [
   },
   {
     id: 3,
-    title: "Software engineering",
+    title: "information technology engineering",
     place: "Aleppo University | Bachelor's",
     date: "2023 - 2028",
     degree: "",
