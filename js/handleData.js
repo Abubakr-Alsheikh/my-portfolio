@@ -87,6 +87,22 @@ const projects = [
     url: "https://abubakralsheikh.pythonanywhere.com/screen-scene/",
     type: "top",
   },
+  {
+    id: 13,
+    title: "Yourhiring Coach",
+    "image-project": "images/Projects/Projects Pictures/yourhiring.jpeg",
+    "image-laptop": "images/Projects/yourhiring.png",
+    url: "https://yourhiring-coach.com/index.php",
+    type: "other",
+  },
+  {
+    id: 14,
+    title: "IntelliDo: An AI-Powered To-Do App",
+    "image-project": "images/Projects/Projects Pictures/intellido.jpeg",
+    "image-laptop": "images/Projects/intellido.png",
+    url: "https://abubakr-alsheikh.github.io/intellido/#/",
+    type: "top",
+  },
 ];
 const certificates = [
   {
