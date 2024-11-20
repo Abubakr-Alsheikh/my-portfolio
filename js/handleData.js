@@ -307,28 +307,28 @@ const education = [
 const skills = {
   "Front End": [
     {
-      skill: "HTML",
-      prograss: "95%",
+      skill: "React",
+      prograss: "75%",
     },
     {
-      skill: "CSS",
-      prograss: "90%",
+      skill: "Material UI",
+      prograss: "65%",
     },
     {
-      skill: "JavaScript",
-      prograss: "90%",
+      skill: "Redux Toolkit",
+      prograss: "60%",
+    },
+    {
+      skill: "Tailwind",
+      prograss: "80%",
     },
     {
       skill: "Bootstrap",
       prograss: "80%",
     },
     {
-      skill: "Tailwind",
-      prograss: "65%",
-    },
-    {
-      skill: "React",
-      prograss: "70%",
+      skill: "jQuery",
+      prograss: "75%",
     },
   ],
   "Back End": [
@@ -337,12 +337,16 @@ const skills = {
       prograss: "70%",
     },
     {
-      skill: "PHP",
-      prograss: "80%",
+      skill: "ASP.NET",
+      prograss: "65%",
     },
     {
-      skill: "Asp.net",
-      prograss: "65%",
+      skill: "API Development",
+      prograss: "60%",
+    },
+    {
+      skill: "Node.js",
+      prograss: "40%",
     },
   ],
   "Data Bases": [
@@ -356,6 +360,10 @@ const skills = {
     },
     {
       skill: "SQLite",
+      prograss: "70%",
+    },
+    {
+      skill: "Oracel",
       prograss: "60%",
     },
   ],
@@ -372,29 +380,41 @@ const skills = {
   "Programming languages": [
     {
       skill: "C#",
-      prograss: "80%",
+      prograss: "75%",
     },
     {
       skill: "Python",
+      prograss: "80%",
+    },
+    {
+      skill: "JavaScript",
       prograss: "70%",
     },
     {
       skill: "C++",
       prograss: "65%",
     },
+    {
+      skill: "PHP",
+      prograss: "80%",
+    },
   ],
   Other: [
+    {
+      skill: "Ubuntu (Linux)",
+      prograss: "60%",
+    },
     {
       skill: "AI Tools",
       prograss: "70%",
     },
     {
-      skill: "Microsoft Office",
-      prograss: "80%",
+      skill: "GitHub",
+      prograss: "65%",
     },
     {
       skill: "Unity",
-      prograss: "60%",
+      prograss: "50%",
     },
   ],
 };
