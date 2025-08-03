@@ -2,7 +2,7 @@
 
 This is the repository for my personal portfolio website. It's a clean, modern, and fully responsive single-page application designed to showcase my skills, projects, certificates, and professional background as a web developer and designer. The site is built with vanilla HTML, CSS, and JavaScript, and features dynamic content loading, an interactive UI, and an integrated AI chatbot.
 
-### [➡️ Live Demo](https://abubakr-alsheikh.github.io/abubakr-alsheikh-my-portfolio/)
+### [➡️ Live Demo](https://abubakr-alsheikh.github.io/my-portfolio/)
 
 
 ## ✨ Features
