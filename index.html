@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -16,13 +16,18 @@
 
     <title>Abubakr Alsheikh - Web Developer and Designer</title>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D7QQFVB7LH"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-D7QQFVB7LH"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-D7QQFVB7LH');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-D7QQFVB7LH");
     </script>
 
     <link rel="icon" href="images/logo.png" />
@@ -34,7 +39,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    
+
     <!-- <link
       rel="stylesheet"
       href="style/cdnjs.cloudflare.com_ajax_libs_font-awesome_5.15.4_css_all.min.css"
@@ -158,7 +163,13 @@
             <a href="#projects" data-i18n="home-button-projects"
               >See my projects</a
             >
-            <a href="Abubakr Alsheikh.pdf" title="Download CV" download="Abubakr Alsheikh.pdf"> <i class="fa fa-download"></i> Download CV</a>
+            <a
+              href="Abubakr Alsheikh.pdf"
+              title="Download CV"
+              download="Abubakr Alsheikh.pdf"
+            >
+              <i class="fa fa-download"></i> Download CV</a
+            >
           </div>
         </div>
         <div class="image">
@@ -288,12 +299,16 @@
                   <h2>Website Enhancement</h2>
                   <div class="pro">
                     <img src="images/icons/redux.png" alt="redux-icon" />
-                    <img src="images/icons/material-ui.png" alt="material-ui-icon" />
+                    <img
+                      src="images/icons/material-ui.png"
+                      alt="material-ui-icon"
+                    />
                     <img src="images/icons/react.png" alt="react-icon" />
                   </div>
                 </div>
                 <p>
-                  Adding interactive elements and animations to make your website more engaging and enjoyable for your visitors.
+                  Adding interactive elements and animations to make your
+                  website more engaging and enjoyable for your visitors.
                 </p>
               </div>
             </div>
@@ -308,12 +323,16 @@
                   <h2>Behind the Scenes</h2>
                   <div class="pro">
                     <img src="images/icons/rest api.png" alt="rest-api-icon" />
-                    <img src="images/icons/net freamwork.png" alt="dotnet-freamwork-icon" />
+                    <img
+                      src="images/icons/net freamwork.png"
+                      alt="dotnet-freamwork-icon"
+                    />
                     <img src="images/icons/django.png" alt="django-icon" />
                   </div>
                 </div>
                 <p>
-                  Building strong foundations for your website, ensuring it runs smoothly and efficiently.
+                  Building strong foundations for your website, ensuring it runs
+                  smoothly and efficiently.
                 </p>
               </div>
             </div>
@@ -325,7 +344,7 @@
               />
               <div class="info">
                 <div class="headline">
-                  <h2 >Visual Appeal</h2>
+                  <h2>Visual Appeal</h2>
                   <div class="pro">
                     <img
                       src="images/icons/photoshop-icon.png"
@@ -335,7 +354,8 @@
                   </div>
                 </div>
                 <p>
-                  Creating attractive and easy-to-use designs that truly represent your vision and identity.
+                  Creating attractive and easy-to-use designs that truly
+                  represent your vision and identity.
                 </p>
               </div>
             </div>
@@ -535,7 +555,10 @@
     <!-- Live chat -->
     <div id="live-chat">
       <div class="clearfix" id="header-chat">
-        <h4>Abubakr Alsheikh (AI Chatbot) <span><i class="fa fa-angle-up"></i></span></h4>
+        <h4>
+          Abubakr Alsheikh (AI Chatbot)
+          <span><i class="fa fa-angle-up"></i></span>
+        </h4>
         <span class="chat-message-counter">0</span>
       </div>
       <div class="chat">
@@ -590,5 +613,240 @@
     <script src="js/contact-script.js"></script>
     <script src="js/handleData.js"></script>
     <!-- <script type="module" src="js/translate.js"></script> -->
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=JetBrains+Mono:wght@400;700&display=swap");
+
+      #migration-hud-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(2, 6, 23, 0.9);
+        backdrop-filter: blur(4px);
+        font-family: "JetBrains Mono", monospace;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        padding: 1rem;
+      }
+
+      #migration-hud-overlay.hud-active {
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .hud-hardware-card {
+        position: relative;
+        width: 100%;
+        max-width: 42rem;
+        background-color: #020617;
+        border: 1px solid #1e293b;
+        padding: 2.5rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        transform: translateY(20px) scale(0.98);
+        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      #migration-hud-overlay.hud-active .hud-hardware-card {
+        transform: translateY(0) scale(1);
+      }
+
+      .hud-screw {
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        background-color: #64748b;
+      }
+      .hud-screw.tl {
+        top: 0;
+        left: 0;
+      }
+      .hud-screw.tr {
+        top: 0;
+        right: 0;
+      }
+      .hud-screw.bl {
+        bottom: 0;
+        left: 0;
+      }
+      .hud-screw.br {
+        bottom: 0;
+        right: 0;
+      }
+
+      .hud-trace-left {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #f97316;
+      }
+
+      .hud-telemetry {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #1e293b;
+        font-size: 0.75rem;
+        color: #64748b;
+        letter-spacing: 0.1em;
+      }
+
+      .hud-title {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 700;
+        letter-spacing: -0.05em;
+        line-height: 1;
+        color: #f8fafc;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+      }
+      .hud-title span {
+        color: #3b82f6;
+      }
+
+      .hud-data-array {
+        display: flex;
+        gap: 1.25rem;
+        margin-bottom: 2.5rem;
+      }
+      .hud-data-line {
+        width: 1px;
+        background-color: #1e293b;
+      }
+      .hud-data-content {
+        flex: 1;
+        font-size: 0.875rem;
+        line-height: 1.7;
+        color: #94a3b8;
+      }
+      .hud-highlight-orange {
+        color: #f97316;
+        font-weight: 700;
+      }
+      .hud-highlight-white {
+        color: #f8fafc;
+      }
+
+      .hud-actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .hud-btn-primary {
+        display: inline-flex;
+        padding: 0.75rem 1.5rem;
+        background-color: #020617;
+        border: none;
+        border: 2px solid #f97316;
+        color: #f97316;
+        font-family: "JetBrains Mono", monospace;
+        font-weight: 700;
+        font-size: 0.875rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+      .hud-btn-primary:hover {
+        background-color: #f97316;
+        color: #020617;
+      }
+
+      .hud-btn-secondary {
+        padding: 0.75rem 1.5rem;
+        background: transparent;
+        border: 1px solid transparent;
+        color: #64748b;
+        font-family: "JetBrains Mono", monospace;
+        font-size: 0.875rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .hud-btn-secondary:hover {
+        color: #f8fafc;
+        border-color: #1e293b;
+      }
+    </style>
+
+    <div id="migration-hud-overlay">
+      <div class="hud-hardware-card">
+        <div class="hud-screw tl"></div>
+        <div class="hud-screw tr"></div>
+        <div class="hud-screw bl"></div>
+        <div class="hud-screw br"></div>
+        <div class="hud-trace-left"></div>
+
+        <div class="hud-telemetry">
+          <span>[SYS.MIGRATION_PROTOCOL]</span>
+          <span>STATUS: INTERCEPT // VOL: MAX</span>
+        </div>
+
+        <div class="hud-title">
+          New Orbital<br />
+          <span>Infrastructure</span> Detected
+        </div>
+
+        <div class="hud-data-array">
+          <div class="hud-data-line"></div>
+          <div class="hud-data-content">
+            <p style="margin-bottom: 1rem">
+              > CURRENT_SECTOR_STATUS:
+              <span class="hud-highlight-orange">DEPRECATED</span>
+            </p>
+            <p style="margin-bottom: 1.5rem">
+              The architecture you are currently viewing has been superseded by
+              a Next-Gen deployment. To access updated modules, live telemetry,
+              and recent projects, immediate rerouting is advised.
+            </p>
+            <p style="font-size: 0.75rem; color: #64748b">
+              TARGET_COORDINATES:
+              <span class="hud-highlight-white"
+                >abubakr-alsheikh.netlify.app</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="hud-actions">
+          <a
+            href="https://abubakr-alsheikh.netlify.app/"
+            class="hud-btn-primary"
+            >[ INITIATE_TRANSFER ]</a
+          >
+          <button id="hud-bypass-btn" class="hud-btn-secondary">
+            [ OVERRIDE_&_STAY ]
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          document
+            .getElementById("migration-hud-overlay")
+            .classList.add("hud-active");
+        }, 1500);
+
+        document
+          .getElementById("hud-bypass-btn")
+          .addEventListener("click", () => {
+            document
+              .getElementById("migration-hud-overlay")
+              .classList.remove("hud-active");
+          });
+      });
+    </script>
   </body>
 </html>
